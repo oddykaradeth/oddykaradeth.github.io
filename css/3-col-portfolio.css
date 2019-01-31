@@ -29,7 +29,7 @@ body {
 
 .card .card-placeholder {
   position: relative;
-  height: 200px;
+  height: 175px;
   overflow: hidden;
 }
 .card .card-placeholder > a {
