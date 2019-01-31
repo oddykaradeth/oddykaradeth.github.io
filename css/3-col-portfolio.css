@@ -46,3 +46,14 @@ body {
 	object-fit: cover;
 	vertical-align: middle;
 }
+.card h4 {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.card h4 a {
+	color: #333333;
+}
+.card h4 a:hover {
+	text-decoration: none;
+}
+
