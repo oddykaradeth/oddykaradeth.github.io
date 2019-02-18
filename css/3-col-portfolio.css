@@ -7,7 +7,7 @@
 body {
   padding-top: 54px;
   background-color: #f5f4f4;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -57,3 +57,31 @@ body {
 	text-decoration: none;
 }
 
+.head-section {
+	margin-top: 32px;
+	margin-bottom: 64px;
+}
+
+.head-section .img-profile {
+	border: .5rem solid #d7d7d7;
+	width: 70%;
+}
+
+.head-section p {
+	padding-top: 24px;
+	margin-bottom: 0;
+}
+
+.my-tools {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.my-tools .the-tools {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.my-tools p {
+	margin-bottom: 0;
+}

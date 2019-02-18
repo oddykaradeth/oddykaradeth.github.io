@@ -13,10 +13,13 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Vendors -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
     <!-- Custom styles for this template -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   </head>
 
@@ -49,99 +52,151 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">My Portfolio
-      </h1>
+      <div class="row head-section">
+        <div class="col-lg-4 col-sm-6 text-center">
+          <img src="img/profile.jpg" class="img-fluid rounded-circle img-profile" alt>
+        </div>
+        <div class="col-lg-8 col-sm-6">
+          <p>Hi, welcome to my personal website (or you just can called portfolio web). Currently I'm working at rumah123.com (REA Group Asia) as a UX Designer and sometime's I also do the Frontend Designer role such as slicing mockups to a dynamic web (using html, css, jquery, etc). I have worked for more than 3 years at rumah123.com and previously I also worked at Dipstrategy (a digital agency company) for almost 3 years with a position as a web designer.</p>
+          <p>Many years I've been passed working in this field (both as a frontend designer or ux designer), there is a lot of experience and valuable knowledge that I get that makes me want to further explore the digital world especially in web design (or application design).</p>
+        </div>
+      </div>
 
+      <div class="my-tools">
+        <h2 class="my-4">The Tools</h2>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 the-tools">
+            <span><i class="fab fa-html5 fa-7x"></i></span>
+            <p>HTML 5</p>
+            <span><small>HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.</small></span>
+          </div>
+          <div class="col-lg-4 col-sm-6 the-tools">
+            <span><i class="fab fa-css3-alt fa-7x"></i></span>
+            <p>CSS 3</p>
+            <span><small>CSS3 is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1.</small></span>
+          </div>
+          <div class="col-lg-4 col-sm-6 the-tools">
+            <span><i class="fab fa-js-square fa-7x"></i></span>
+            <p>Jquery</p>
+            <span><small>Jquery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation.</small></span>
+          </div>
+          <div class="col-lg-4 col-sm-6 the-tools">
+            <span><i class="fab fa-sketch fa-7x"></i></span>
+            <p>Sketch</p>
+            <span><small>Sketch is a proprietary vector graphics editor for Apple's macOS, developed by Bohemian Coding.</small></span>
+          </div>
+          <div class="col-lg-4 col-sm-6 the-tools">
+            <span><i class="fab fa-adobe fa-7x"></i></span>
+            <p>Adobe Photoshop & Illustrator</p>
+            <span><small>Adobe Photoshop and Illustrator is a raster graphics editor developed and published by Adobe Inc.</small></span>
+          </div>
+          <div class="col-lg-4 col-sm-6 the-tools">
+            <span><i class="fab fa-invision fa-7x"></i></span>
+            <p>Invisionapp</p>
+            <span><small>InVisionapp is basically a prototyping tool that allows you to create clickable versions of your design.</small></span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="my-4">My Portfolio</h2>
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/intiland.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-intiland">
+                <img src="img/intiland.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="#" data-toggle="modal" data-target=".modal-intiland">Intiland Smart Deals</a>
               </h4>
-              <p class="card-text"></p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/festivalproperti.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-festivalproperty">
+                <img src="img/festivalproperti.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#" data-toggle="modal" data-target=".modal-festivalproperty">Festival Properti Indonesia 2018</a>
               </h4>
-              <p class="card-text"></p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/kprhsbc.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-rumahsempit">
+                <img src="img/rumahsempit.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="#" data-toggle="modal" data-target=".modal-rumahsempit">Kompetisi Rumah Sempit</a>
               </h4>
-              <p class="card-text"></p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/kprpermata.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-hsbc">
+                <img src="img/kprhsbc.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Four</a>
+                <a href="#" data-toggle="modal" data-target=".modal-hsbc">KPR Bank HSBC</a>
               </h4>
-              <p class="card-text"></p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/kprmandiri.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-permata">
+                <img src="img/kprpermata.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Five</a>
+                <a href="#" data-toggle="modal" data-target=".modal-permata">KPR Bank Permata</a>
               </h4>
-              <p class="card-text"></p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/rumahsempit.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-mandiri">
+                <img src="img/kprmandiri.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Six</a>
+                <a href="#" data-toggle="modal" data-target=".modal-mandiri">KPR Bank Mandiri</a>
               </h4>
-              <p class="card-text"></p>
             </div>
           </div>
         </div>
+        
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/kpruob.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-uob">
+                <img src="img/kpruob.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="#" data-toggle="modal" data-target=".modal-uob">KPR Bank UOB</a>
               </h4>
-              <p class="card-text"></p>
             </div>
           </div>
         </div>
@@ -241,10 +296,80 @@
     </div>
     <!-- /.container -->
 
+
+    <!-- Modal -->
+    <div class="modal fade modal-intiland" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="img/intiland.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-festivalproperty" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="img/festivalproperti.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-rumahsempit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="img/rumahsempit.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-hsbc" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="img/kprhsbc.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-permata" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="img/kprpermata.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-mandiri" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="img/kprmandiri.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-uob" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="img/kpruob.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-white">Copyright &copy; Lodewyck Anthonius 2019</p>
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <p class="m-0 text-white">Copyright &copy; Lodewyck Anthonius 2019</p>
+          </div>
+          <div class="col-lg-12">
+            <div class="footer-icon text-white">
+              <span><i class="fab fa-linkedin fa-1x"></i></span>
+              <span><i class="fab fa-facebook-square fa-1x"></i></span>
+              <span><i class="fab fa-twitter-square fa-1x"></i></span>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.container -->
     </footer>
@@ -252,6 +377,12 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
+    </script>
 
   </body>
 
