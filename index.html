@@ -29,22 +29,22 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Lodewyck Anthonius</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Portfolio</a>
+              <a class="nav-link" href="#tools">The Tools</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#recent">Recent Works</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </nav>
 
@@ -52,54 +52,84 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <div class="row head-section">
-        <div class="col-lg-4 col-sm-6 text-center">
-          <img src="img/profile.jpg" class="img-fluid rounded-circle img-profile" alt>
-        </div>
-        <div class="col-lg-8 col-sm-6">
-          <p>Hi, welcome to my personal website (or you just can called portfolio web). Currently I'm working at rumah123.com (REA Group Asia) as a UX Designer and sometime's I also do the Frontend Designer role such as slicing mockups to a dynamic web (using html, css, jquery, etc). I have worked for more than 3 years at rumah123.com and previously I also worked at Dipstrategy (a digital agency company) for almost 3 years with a position as a web designer.</p>
-          <p>Many years I've been passed working in this field (both as a frontend designer or ux designer), there is a lot of experience and valuable knowledge that I get that makes me want to further explore the digital world especially in web design (or application design).</p>
+      <div id="about">
+        <div class="row head-section">
+          <div class="col-lg-4 col-sm-6 text-center">
+            <img src="img/profile.jpg" class="img-fluid rounded-circle img-profile" alt>
+          </div>
+          <div class="col-lg-8 col-sm-6">
+            <p>Hi, welcome to my personal website (or you just can called portfolio web). Currently I'm working at rumah123.com (REA Group Asia) as a UX Designer and sometime's I also do the Frontend Designer role such as slicing mockups to a dynamic web (using html, css, jquery, etc). I have worked for more than 3 years at rumah123.com and previously I also worked at Dipstrategy (a digital agency company) for almost 3 years with a position as a web designer.</p>
+            <p>Many years I've been passed working as a frontend designer or ux designer, there is a lot of experience and valuable knowledge that I get that makes me want to further explore the digital world especially in web design (or application design).</p>
+          </div>
         </div>
       </div>
 
-      <div class="my-tools">
+      <div class="my-tools" id="tools">
         <h2 class="my-4">The Tools</h2>
         <div class="row">
           <div class="col-lg-4 col-sm-6 the-tools">
-            <span><i class="fab fa-html5 fa-7x"></i></span>
+            <span><i class="fab fa-html5 fa-5x"></i></span>
             <p>HTML 5</p>
             <span><small>HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.</small></span>
           </div>
           <div class="col-lg-4 col-sm-6 the-tools">
-            <span><i class="fab fa-css3-alt fa-7x"></i></span>
+            <span><i class="fab fa-css3-alt fa-5x"></i></span>
             <p>CSS 3</p>
             <span><small>CSS3 is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1.</small></span>
           </div>
           <div class="col-lg-4 col-sm-6 the-tools">
-            <span><i class="fab fa-js-square fa-7x"></i></span>
+            <span><i class="fab fa-js-square fa-5x"></i></span>
             <p>Jquery</p>
             <span><small>Jquery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation.</small></span>
           </div>
           <div class="col-lg-4 col-sm-6 the-tools">
-            <span><i class="fab fa-sketch fa-7x"></i></span>
+            <span><i class="fab fa-sketch fa-5x"></i></span>
             <p>Sketch</p>
             <span><small>Sketch is a proprietary vector graphics editor for Apple's macOS, developed by Bohemian Coding.</small></span>
           </div>
           <div class="col-lg-4 col-sm-6 the-tools">
-            <span><i class="fab fa-adobe fa-7x"></i></span>
+            <span><i class="fab fa-adobe fa-5x"></i></span>
             <p>Adobe Photoshop & Illustrator</p>
             <span><small>Adobe Photoshop and Illustrator is a raster graphics editor developed and published by Adobe Inc.</small></span>
           </div>
           <div class="col-lg-4 col-sm-6 the-tools">
-            <span><i class="fab fa-invision fa-7x"></i></span>
+            <span><i class="fab fa-invision fa-5x"></i></span>
             <p>Invisionapp</p>
             <span><small>InVisionapp is basically a prototyping tool that allows you to create clickable versions of your design.</small></span>
           </div>
         </div>
       </div>
 
-      <h2 class="my-4">My Portfolio</h2>
+      <h2 class="my-4" id="recent">Recent Works</h2>
       <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <div class="card-placeholder">
+              <a href="#" data-toggle="modal" data-target=".modal-consumer">
+                <img src="img/consumer-profile.jpg" alt="">
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#" data-toggle="modal" data-target=".modal-intiland">Rumah123 Consumer Profile</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <div class="card-placeholder">
+              <a href="#" data-toggle="modal" data-target=".modal-agent">
+                <img src="img/agent-profile.jpg" alt="">
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#" data-toggle="modal" data-target=".modal-agent">Rumah123 Agent Profile</a>
+              </h4>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
@@ -184,7 +214,6 @@
             </div>
           </div>
         </div>
-        
 
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
@@ -203,11 +232,13 @@
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/mandiri-crm.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-crm">
+                <img src="img/mandiri-crm.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#" data-toggle="modal" data-target=".modal-crm">Bank Mandiri CRM</a>
               </h4>
               <p class="card-text"></p>
             </div>
@@ -216,11 +247,13 @@
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/careerpage.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-career">
+                <img src="img/careerpage.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="#" data-toggle="modal" data-target=".modal-career">Rumah123 Career</a>
               </h4>
               <p class="card-text"></p>
             </div>
@@ -229,11 +262,12 @@
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/eventcalendar.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-event">
+                <img src="img/eventcalendar.png" alt=""></a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Four</a>
+                <a href="#" data-toggle="modal" data-target=".modal-event">Rumah123 Event Calendar</a>
               </h4>
               <p class="card-text"></p>
             </div>
@@ -242,11 +276,13 @@
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/jpw2015.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-jpw">
+                <img src="img/jpw2015.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Five</a>
+                <a href="#" data-toggle="modal" data-target=".modal-jpw">Jakarta Property Week 2015</a>
               </h4>
               <p class="card-text"></p>
             </div>
@@ -255,11 +291,28 @@
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <div class="card-placeholder">
-              <a href="#"><img src="img/rumahsempit.png" alt=""></a>
+              <a href="#" data-toggle="modal" data-target=".modal-srp">
+                <img src="img/srpage.png" alt="">
+              </a>
             </div>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Six</a>
+                <a href="#" data-toggle="modal" data-target=".modal-srp">Rumah123 Search Result</a>
+              </h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <div class="card-placeholder">
+              <a href="#" data-toggle="modal" data-target=".modal-detail">
+                <img src="img/srdetail.png" alt="">
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#" data-toggle="modal" data-target=".modal-detail">Rumah123 Search Result Detail</a>
               </h4>
               <p class="card-text"></p>
             </div>
@@ -298,8 +351,33 @@
 
 
     <!-- Modal -->
+    <div class="modal fade modal-consumer" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/consumer-profile.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-agent" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/agent-profile.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
     <div class="modal fade modal-intiland" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content">
           <img src="img/intiland.png" class="img-fluid" alt="">
         </div>
@@ -308,6 +386,9 @@
 
     <div class="modal fade modal-festivalproperty" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content">
           <img src="img/festivalproperti.png" class="img-fluid" alt="">
         </div>
@@ -316,6 +397,9 @@
 
     <div class="modal fade modal-rumahsempit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content">
           <img src="img/rumahsempit.png" class="img-fluid" alt="">
         </div>
@@ -324,6 +408,9 @@
 
     <div class="modal fade modal-hsbc" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content">
           <img src="img/kprhsbc.png" class="img-fluid" alt="">
         </div>
@@ -332,6 +419,9 @@
 
     <div class="modal fade modal-permata" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content">
           <img src="img/kprpermata.png" class="img-fluid" alt="">
         </div>
@@ -340,6 +430,9 @@
 
     <div class="modal fade modal-mandiri" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content">
           <img src="img/kprmandiri.png" class="img-fluid" alt="">
         </div>
@@ -348,25 +441,94 @@
 
     <div class="modal fade modal-uob" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
         <div class="modal-content">
           <img src="img/kpruob.png" class="img-fluid" alt="">
         </div>
       </div>
     </div>
 
+    <div class="modal fade modal-crm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/mandiri-crm.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-career" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/careerpage.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-event" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/eventcalendar.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-jpw" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/jpw2015.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-srp" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/srpage.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-detail" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content">
+          <img src="img/srdetail.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="footer-main bg-dark">
       <div class="container">
         <div class="row text-center">
-          <div class="col-lg-12">
+          <div class="col-lg-12 footer-cta">
             <p class="m-0 text-white">Copyright &copy; Lodewyck Anthonius 2019</p>
           </div>
           <div class="col-lg-12">
             <div class="footer-icon text-white">
-              <span><i class="fab fa-linkedin fa-1x"></i></span>
-              <span><i class="fab fa-facebook-square fa-1x"></i></span>
-              <span><i class="fab fa-twitter-square fa-1x"></i></span>
+              <span><a href="https://www.linkedin.com/in/oddy-k/" target="_blank"><i class="fab fa-linkedin fa-x"></i></a></span>
+              <span><a href=""><i class="fab fa-facebook-square fa-1x"></i></a></span>
+              <span><a href=""><i class="fab fa-twitter-square fa-1x"></i></a></span>
             </div>
           </div>
         </div>

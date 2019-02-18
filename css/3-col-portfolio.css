@@ -74,7 +74,7 @@ body {
 
 .my-tools {
 	margin-top: 16px;
-	margin-bottom: 32px;
+	margin-bottom: 40px;
 }
 
 .my-tools .the-tools {
@@ -85,3 +85,32 @@ body {
 .my-tools p {
 	margin-bottom: 0;
 }
+
+.bg-blue {
+	background-color: #2980b9 !important;
+}
+
+.footer-main {
+	padding-top: 24px;
+	padding-bottom: 32px;
+}
+
+.footer-cta p {
+	margin-bottom: 4px;
+}
+
+.footer-icon span {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.footer-icon span a {
+	color: #ffffff;
+}
+
+.close {
+	color: #ffffff;
+}
+
+/*.bg-dark {
+	opacity: 0.5 !important;
+}*/
