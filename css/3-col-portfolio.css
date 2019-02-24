@@ -51,6 +51,10 @@ header.masthead .img-profile {
 	width: 20%;
 }
 
+header.masthead p {
+	margin-top: 1rem;
+}
+
 .portfolio-item {
   margin-bottom: 30px;
 }
@@ -58,6 +62,7 @@ header.masthead .img-profile {
 .pagination {
   margin-bottom: 30px;
 }
+
 .card {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
@@ -67,6 +72,7 @@ header.masthead .img-profile {
   height: 175px;
   overflow: hidden;
 }
+
 .card .card-placeholder > a {
 	background-size: cover;
 	background-position: center;
@@ -75,34 +81,48 @@ header.masthead .img-profile {
 	height: auto;
 	position: absolute;
 }
+
 .card .card-placeholder > a > img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	vertical-align: middle;
 }
+
 .card h4 {
 	font-size: 16px;
 	margin-bottom: 0;
 }
+
 .card h4 a {
 	color: #333333;
 }
+
 .card h4 a:hover {
 	text-decoration: none;
 }
 
 .head-section {
-	margin-top: 32px;
-	margin-bottom: 64px;
+	margin-top: 64px;
+	margin-bottom: 24px;
 }
 
-.head-section .img-profile {
-	
+.head-section h2 {
+	margin-bottom: 0 !important;
 }
+
+/*.head-section:before {
+    content: '';
+    height: 10px;
+    width: 50px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+    background: #ffa804;
+  }*/
 
 .head-section p {
-	padding-top: 24px;
+	padding-top: 0;
 	margin-bottom: 0;
 }
 
