@@ -30,7 +30,7 @@ body {
 }
 
 .bg-opacity {
-	background-color: rgba(52,58,64,.5);
+	background-color: #2980b9;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -40,7 +40,7 @@ body {
 header.masthead {
 	position: relative;
 	background-color: #343a40;
-	background: url(../img/bg-masthead.jpg) no-repeat center center;
+	background: url(../img/close_up_code.jpg) no-repeat center center;
 	background-size: cover;
 	padding-top: 5rem;
 	padding-bottom: 7rem;
@@ -52,7 +52,13 @@ header.masthead .img-profile {
 }
 
 header.masthead p {
+	font-size: 24px;
 	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+header.masthead span {
+	font-size: 18px;
 }
 
 .portfolio-item {
