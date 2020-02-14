@@ -7,7 +7,7 @@
 body {
   padding-top: 54px;
   background-color: #f5f4f4;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', serif;
 }
 
 @media (min-width: 992px) {
@@ -170,3 +170,55 @@ header.masthead span {
 .close {
 	color: #ffffff;
 }
+.progress {
+	height: 4px !important;
+}
+.skills-set {
+	margin : 16px 0 8px;
+}
+.head-section p{
+	font-weight: 300;
+	font-size: 16px;
+}
+h4.info-title {
+	font-weight: 500;
+	font-size: 16px;
+}
+.info p {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.icon.icon-sketch {
+	color: #ffae05;
+}
+.icon.icon-invision {
+	color: #ff3266;
+}
+.icon.icon-zeplin img {
+	width: 42px;
+	height: 48px;
+}
+.icon.icon-adobe {
+	color: #ec0a11;
+}
+.icon.icon-bootstrap {
+	color: #563d7c;
+}
+.icon.icon-html5 {
+	color: #ef5f25;
+}
+.icon.icon-css3{
+	color: #2880b8;
+}
+/*button.close {
+	position: absolute;
+	z-index: 1;
+	right: 8px;
+	top: 8px;
+	width: 30px;
+	height: 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 50%;
+}*/
