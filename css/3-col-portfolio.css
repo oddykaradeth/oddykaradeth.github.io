@@ -61,6 +61,10 @@ header.masthead span {
 	font-size: 18px;
 }
 
+.bg-container {
+	background-color: #ffffff;
+
+}
 .portfolio-item {
   margin-bottom: 30px;
 }
@@ -72,7 +76,6 @@ header.masthead span {
 .card {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
-
 .card .card-placeholder {
   position: relative;
   height: 175px;
@@ -166,19 +169,35 @@ header.masthead span {
 .footer-icon span a {
 	color: #ffffff;
 }
-
 .close {
 	color: #ffffff;
 }
 .progress {
 	height: 4px !important;
 }
-.skills-set {
-	margin : 16px 0 8px;
+.row-tool {
+	padding-right: 16px;
+}
+.tool-set {
+	margin : 8px 0;
+	padding-left: 16px;
+	padding-right: 0;
+}
+.tool-set .info {
+	background-color: white;
+    border-radius: 3px;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+    min-height: 200px;
+}
+.head-section h2 {
+	text-align: center;
 }
 .head-section p{
 	font-weight: 300;
 	font-size: 16px;
+	text-align: center;
+	margin-bottom: 24px;
 }
 h4.info-title {
 	font-weight: 500;
@@ -187,8 +206,9 @@ h4.info-title {
 .info p {
 	font-weight: 300;
 	font-size: 14px;
+	text-align: left;
+	margin-bottom: 0;
 }
-
 .icon.icon-sketch {
 	color: #ffae05;
 }
