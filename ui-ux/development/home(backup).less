@@ -1,0 +1,151 @@
+/* Slideshow img */
+
+#homepage-cover {
+	background: #000000;
+	position: relative;
+	max-width: 1920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#bannerOwlcarousel {
+	position: relative;
+	position: relative;
+	width: 1920px;
+	left: 50%;
+	margin-left: -960px;
+}	
+
+#bannerOwlcarousel .owl-pagination {
+	position: absolute;
+	bottom: 65px;
+	right: 0;
+	left: 0;
+}
+
+#bannerOwlcarousel .item img {
+    display: block;
+    height: 440px;
+}
+
+#bannerOwlcarousel .owl-controls .owl-buttons > div {
+	color: #fff;
+	display: inline-block;
+	zoom: 1;
+	line-height: 0;
+	font-size: 30px;
+	border-radius: 50%;
+	background: transparent !important;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	bottom: 50%;
+}
+
+#bannerOwlcarousel .owl-controls .owl-buttons > div.owl-next {
+	left: auto;
+	right: 10%;
+	z-index: 2;
+}
+
+#bannerOwlcarousel .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	opacity: 0.5;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #fff !important;
+	border: 1px solid #fff !important;
+}
+
+#bannerOwlcarousel .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	opacity: 1;
+}
+
+/* end slideshow */
+
+
+/* Search Box */
+
+.home-search .property-search-box {
+	background: rgb(0, 0, 0); /* The Fallback */
+   	background: rgba(0, 0, 0, 0.7); 
+	border-radius: 10px;
+	padding: 1px 5px 25px 10px;
+	position: relative;
+	top: -70px;
+}
+
+.home-search .title-search-box {
+	font-weight: bold;
+	font-size: 20px;
+	padding: 15px 15px 0 15px;
+	color: #fff;
+}
+
+.home-search .search-wrapper .form-inline .input-group > .form-control {
+	width: 630px;
+	border-left: none;
+	box-shadow: none;
+}
+.home-search .search-wrapper .form-group  {
+	margin-right: 10px;
+}
+.home-search .search-wrapper .btn {
+	padding-right: 50px;
+	padding-left: 50px;
+	font-size: 14px;
+}
+.home-search .search-wrapper {
+	padding: 0px 10px;
+}
+.home-search .filter-wrapper {
+	padding: 0px 10px;
+}
+.home-search .filter-wrapper .filter-container {
+	background: transparent;
+	border: none;
+	padding: 0px;
+}
+
+
+
+
+.title-property::after {
+content: "";
+display: block;
+height: auto;
+clear: both;
+}
+
+.title-property h2 {
+border-bottom: 4px solid #ececec;
+margin: 0;
+padding: 10px 0;
+float: left;
+}
+
+
+
+#bannerOwlcarousel {
+   position: relative; 
+  top: 0; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+
+#bannerOwlcarousel .item img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}

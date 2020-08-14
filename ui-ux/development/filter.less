@@ -1,0 +1,214 @@
+.select-pretty select {
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;	
+	padding: 6px 12px;
+	-webkit-appearance: none;
+    z-index: 20;
+}
+
+.select-pretty {
+	position: relative;
+}
+
+.select-pretty .btn {
+	width: 100%;
+	background-color: #e4e4e4;
+}
+
+.filter-wrapper {    
+    margin: 20px 0px 0px;
+}
+
+.filter-wrapper .filter-container {
+    background: #f4f4f4;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.select-trigger .fa {
+    font-size: 12px;
+    color: #000;
+    top: 0px;
+}
+
+.select-trigger {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#reset-filter-btn {
+    color: #000;
+    text-decoration: underline;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#reset-filter-btn:hover {
+    text-decoration: none;
+}
+
+#show-filter-btn {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.main-filter .select-pretty {
+    margin-right: 10px;
+}
+
+.optional-filter .form-group {
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+.optional-filter {
+    position: relative;
+	padding-top: 38px;
+}
+
+.optional-filter .form-group .head {
+    margin-bottom: 10px;
+    /* 22122014 mjuliakbar */
+    font-weight: bold;
+}
+
+.optional-filter .form-group .form-row {
+    margin-bottom: 10px;
+}
+
+.optional-filter .form-group.no-heading {
+    /*top: 28px;
+	position: relative;*/
+    margin-top: 28px;
+}
+
+/* Custom Dropdown */
+.select-pretty .btn a {
+    color: #000;
+    padding: 8px 14px;
+    display: block;
+}
+
+.select-pretty .btn a:hover, .select-pretty .btn a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.select-pretty .btn.custom-dropdown {
+    padding: 0;
+}
+
+.custom-input-container {
+    background-color: #fcfcfc;
+    padding: 10px;
+}
+
+.custom-input-container > span {
+    color: #bbb;
+    margin-right: 5px;
+}
+
+.custom-input-container > span.label-right {
+    margin-left: 5px;
+}
+
+.custom-dropdown .custom-input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.custom-input-suggestion {
+    background-color: #f4f4f4;
+}
+
+.custom-input-suggestion ul {
+    margin-bottom: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.custom-input-suggestion ul li a:hover {
+    color: #2980b9;
+    background-color: #e4e4e4;
+}
+
+.filter-wrapper .btn-primary {
+    text-transform: uppercase;
+}
+
+.filter-apply-button {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.filter-apply-button .btn {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* 22122014 mjuliakbar */
+.filter-wrapper .form-inline .input-group > .form-control {
+    width: 450px;
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+/* col-xs (Extra Small) */
+@media only screen and (max-width: 767px) {
+/* 22122014 mjuliakbar */
+.filter-wrapper .form-inline .input-group > .form-control {
+    width: 100%;
+}
+.optional-filter {
+    padding-bottom: 15px;
+}
+.optional-filter .form-group {
+    margin-right: 0px;
+}
+.main-filter .select-pretty {
+    margin-right: 0px;
+}
+/*.filter-wrapper .btn-primary {
+    width: 100%;
+}
+*/
+.filter-apply-button .btn{
+    width: 100%;
+}
+
+}
+
+/* col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) and (max-width: 991px) {
+
+/* 22122014 mjuliakbar */
+.filter-wrapper .form-inline .input-group > .form-control {
+    width: 200px;
+}
+
+/* 22122014 mjuliakbar */
+.main-filter .select-pretty {
+    margin-right: 0px;
+}
+.optional-filter {
+    padding-bottom: 20px;
+}
+
+}
+
+/* col-lg (LARGE), col-md (MEDIUM) */
+@media only screen and (min-width: @screen-desktop) {
+    
+
+}
+

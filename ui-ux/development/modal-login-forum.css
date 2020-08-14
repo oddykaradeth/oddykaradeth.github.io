@@ -1,0 +1,41 @@
+.close-new {
+  display: none;
+}
+.modal-title {
+  margin: 8px 0;
+}
+.login-form .nav-tabs {
+  margin: 25px 0;
+}
+.login-form .nav-tabs li a {
+  color: #555555;
+  background-color: #ffffff;
+  border: transparent;
+  cursor: pointer;
+}
+.login-form .nav-tabs li a:hover {
+  border: transparent;
+  border-bottom: 2px solid #2a80ba;
+}
+.login-form .nav-tabs li a:focus {
+  border: transparent;
+  border-bottom: 2px solid #2a80ba;
+}
+.login-form .nav-tabs .active a {
+  color: #555555;
+  background-color: #ffffff;
+  border: transparent;
+  border-bottom: 2px solid #2a80ba;
+  cursor: pointer;
+}
+.login-form .tab-content .tab-pane form .form-group .button-forgot {
+  width: 50%;
+  float: left;
+}
+.login-form .tab-content .tab-pane form .form-group .button-login {
+  width: 50%;
+  float: right;
+}
+.login-form .tab-content .tab-pane form .form-group .button-register .btn {
+  margin-top: 0px;
+}

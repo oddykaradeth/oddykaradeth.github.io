@@ -1,0 +1,75 @@
+.find-agent-wrapper .agent-listing h1 a {
+  font-size: 13px;
+}
+.find-agent-listing .listing-title a {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.find-agent-wrapper .find-agent-listing .agency-logo img {
+  margin: auto;
+  max-height: 40px !important;
+}
+.find-agent-listing .agent-photo {
+  height: 100px;
+}
+.find-agent-listing .agent-photo img {
+  height: 100%;
+  margin: auto;
+}
+.find-agent-wrapper .find-agent-listing .agency-logo {
+  margin-top: 10px;
+  width: 100%;
+}
+.find-agent-wrapper .find-agent-listing .specialized-area {
+  margin-bottom: 10px;
+}
+.find-agent-wrapper .find-agent-listing .join-member {
+  color: #999999;
+  font-size: 13px;
+}
+.find-agent-listing .online-ads,
+.find-agent-listing .sold-ads {
+  margin: 10px 0;
+  font-size: 13px;
+}
+.find-agent-listing .online-ads .btn,
+.find-agent-listing .sold-ads .btn {
+  padding: 2px 5px;
+  font-size: 14px;
+}
+/* Updated 06032015 */
+.find-agent-wrapper .listing {
+  margin: 0px;
+}
+.find-agent-wrapper .specialized-property {
+  height: 20px;
+  overflow: hidden;
+}
+.find-agent-wrapper .specialized-area {
+  height: 20px;
+  overflow: hidden;
+}
+.find-agent-wrapper .agent-listing .form-inline::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: auto;
+}
+.find-agent-filter .form-inline .input-group .form-control-agent {
+  width: 422px;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .find-agent-filter .form-inline .input-group .form-control-agent {
+    width: 270px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .find-agent-filter .form-inline .input-group .form-control-agent {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+  .find-agent-filter .form-inline .input-group .form-control-agent {
+    width: 250px;
+  }
+}

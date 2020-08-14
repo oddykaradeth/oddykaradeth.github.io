@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KPR Bank HSBC | Rumah123.com</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://images.id.ippstatic.com/v4/favicon.ico?v=4" />
+
+<!-- for development -->
+<link rel="stylesheet/less" type="text/css" href="../development/styles.less" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+
+<header id="header" class="top-hsbc">
+    <nav class="navbar navbar-primary navbar-homepage" role="navigation">
+        <div class="container">      
+            <div class="navbar-header">
+                <a class="navbar-brand logo123" href="#">Rumah123.com</a>
+            </div>      
+        </div>
+    </nav>
+</header>
+<div class="hsbc-banner">
+    <div class="container">
+        <div class="row">
+            <div class="calc-box">
+                <a href="#" id="open-calc" class="calc-show"><h4><strong>HSBC Kalkulator Home Loan</strong></h4></a>
+                <div class="hsbc-calc">
+                    <div class="calc-content">
+                        <p>Kalkulator dengan pilihan suku bunga tetap :</p>
+                        <ul class="one-cols center-block">
+                            <li>7.77 % P.A For 1 year</li>
+                            <li>8.88 % P.A For 2 years</li>
+                            <li>9.99 % P.A For 3 years</li>
+                        </ul>
+                        <p>Fixed 1, 2, 3 tahun.</p>
+                        <div id="count-form">    
+                            <div class="form-group has-error required" style="overflow:auto;">
+                                <label class="col-sm-4 col-md-4 text-left">Jumlah pinjaman</label>
+                                <div class="col-sm-8 col-md-8">
+                                    <input type="text" class="form-control input-sm" placeholder="Jumlah pinjaman" name="jumpin">
+                                </div>
+                            </div>
+                            <div class="form-group has-error required" style="overflow:auto;">
+                                <label class="col-sm-4 col-md-4 text-left">Masa pinjaman</label>
+                                <div class="col-sm-8 col-md-8">
+                                    <input type="text" class="form-control input-sm" placeholder="Masa pinjaman" name="maspin">
+                                </div>
+                            </div>
+                            <div class="form-group has-error required" style="overflow:auto;">
+                                <label class="col-sm-4 col-md-4 text-left">Suku bunga</label>
+                                <div class="col-sm-8 col-md-8">
+                                    <input type="text" class="form-control input-sm" placeholder="Suku bunga" name="sukbung">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input id="Button1" class="btn btn-primary btn-block" type="button" value="HITUNG" onclick="switchVisible();"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result-form" style="display: none;">    
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Angsuran Perbulan</td>
+                                        <td>Rp. 1.000.000.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biaya Provisi</td>
+                                        <td>Rp. 1.000.000.000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biaya Administrasi</td>
+                                        <td>Rp. 1.000.000.000.000</td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input id="Button1" class="btn btn-primary btn-block" type="button" value="HITUNG ULANG" onclick="switchbackVisible();"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hsbc-kpr">
+
+    <div class="red-menu">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#applykprhsbc">Ajukan Sekarang</a></li>
+                    <li><a data-toggle="pill" href="#infokprhsbc">Info HSBC Home Loan</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+    <div class="tab-content">
+        <div id="applykprhsbc" class="tab-pane fade in active">
+            <div class="kpr-apply-now bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="kpr-form-calculator">
+                                <form id="data-diri" method="post" class="form-horizontal bg-grey">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12 text-center">
+                                                <h2 class="section-heading">FORM PENGAJUAN HSBC HOME LOAN</h2>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <label class="text-mandatory"><span>*</span> Wajib diisi</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Nama Lengkap Sesuai KTP *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" class="form-control input-sm" placeholder="Nama" name="nama">
+                                                        <label class="input-error">Nama belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">No. KTP *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" class="form-control input-sm" placeholder="No. KTP" name="noktp">
+                                                        <label class="input-error">No. KTP belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">No. NPWP *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" class="form-control input-sm" placeholder="No. NPWP" name="nama">
+                                                        <label class="input-error">No. NPWP belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Jenis Kelamin *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="jkel" class="form-control input-sm">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="laki">Laki-laki</option>
+                                                            <option value="perempuan">Perempuan</option>
+                                                        </select>
+                                                      <label class="input-error">Jenis kelamin belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Tanggal Lahir *</label>
+                                                    <div class="col-sm-7 col-md-7 form-inline">
+                                                        <div class="input-group input-group-sm">
+                                                            <input type="text" class="form-control" placeholder="DD-MM-YYYY" name="tgllahir">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <label class="input-error">Tanggal lahir belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Warga Negara *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="wn" class="form-control input-sm">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="laki">WNI</option>
+                                                            <option value="perempuan">WNA</option>
+                                                        </select>
+                                                        <label class="input-error">Kewarganegaraan belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Alamat tinggal saat ini *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <textarea class="form-control input-sm" rows="5" id="alamat" placeholder="Alamat Rumah"></textarea>
+                                                        <label class="input-error">Alamat belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Kota Domisili *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="domisili" class="form-control input-sm">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="jabodetabek">JABODETABEK</option>
+                                                            <option value="surabaya">Surabaya</option>
+                                                        </select>
+                                                        <label class="input-error">Kota domisili belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">No. Telepon Rumah *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="number" class="form-control input-sm" placeholder="No. Telepon Rumah" name="norumah">
+                                                        <label class="input-error">No. Telepon rumah belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">No. Handphone *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="number" class="form-control input-sm" placeholder="No. Handphone" name="nohandphone">
+                                                        <label class="input-error">No. Handphone belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Email *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" class="form-control input-sm" placeholder="Email" name="email">
+                                                        <label class="input-error">Email belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Pekerjaan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="pekerjaan" class="form-control input-sm">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="karyawan">Karyawan</option>
+                                                            <option value="wiraswasta">Wiraswasta</option>
+                                                            <option value="profesional">Profesional</option>
+                                                        </select>
+                                                        <label class="input-error">Pekerjaan belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Jabatan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" class="form-control input-sm" placeholder="Jabatan" name="jabatan">
+                                                        <label class="input-error">Jabatan belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Nama Perusahaan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" name="perusahaan" class="form-control input-sm" placeholder="Nama Perusahaan">
+                                                        <label class="input-error">Nama perusahaan belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Bidang Usaha *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" class="form-control input-sm" placeholder="Bidang Usaha" name="bidus">
+                                                        <label class="input-error">Bidang usaha belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Alamat Kantor/Tempat Bekerja *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <textarea class="form-control input-sm" rows="5" id="alamatkantor" placeholder="Alamat Kantor/Tempat Bekerja"></textarea>
+                                                        <label class="input-error">Alamat kantor belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">No. Telepon Kantor *</label>
+                                                    <div class="col-sm-5 col-md-5">
+                                                        <input type="number" class="form-control input-sm" placeholder="(Kode Area + No)" name="nokantor">
+                                                        <label class="input-error">Telepon kantor belum Anda isi.</label>
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2">
+                                                        <input type="number" class="form-control input-sm" placeholder="Ext." name="ext" max="999">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Penghasilan /bulan pemohon *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="number" class="form-control input-sm" placeholder="Penghasilan Perbulan" name="penghasilan">
+                                                        <label class="input-error">Penghasilan belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Penghasilan /bulan Suami/Istri/Tambahan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="number" class="form-control input-sm" placeholder="Penghasilan Perbulan" name="tambahan">
+                                                        <label class="input-error">Penghasilan belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Total Penghasilan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="number" class="form-control input-sm" placeholder="Penghasilan Perbulan" name="total">
+                                                        <label class="input-error">Total penghasilan belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Tujuan yang diinginkan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="tujuan" class="form-control input-sm" name="tujuan">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="belirumah">Pembelian Rumah</option>
+                                                            <option value="takeover">Take Over &amp; Top-up</option>
+                                                        </select>
+                                                        <label class="input-error">Tujuan belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Jaminan/Objek Pembiayaan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="jaminan" class="form-control input-sm" name="jaminan">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="rumah">Rumah</option>
+                                                            <option value="apartemen">Apartemen</option>
+                                                            <option value="ruko">Rumah Toko</option>
+                                                        </select>
+                                                        <label class="input-error">Jaminan belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Area Properti yang diinginkan *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="lokasi" class="form-control input-sm" name="area">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="jabodetabek">JABODETABEK</option>
+                                                            <option value="surabaya">Surabaya</option>
+                                                        </select>
+                                                        <label class="input-error">Area properti belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Jenis Properti yang akan diinginkan</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="jenis" class="form-control input-sm" name="jenis">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="probaru">Properti Baru</option>
+                                                            <option value="proseken">Properti Second</option>
+                                                        </select>
+                                                        <label class="input-error">Jenis properti belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Tahapan Transaksi Properti *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="tahapan" class="form-control input-sm" name="tahapan">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="sudahnego">Sudah negosiasi</option>
+                                                            <option value="akannego">Akan negosiasi</option>
+                                                            <option value="sedangcari">Sedang mencari properti</option>
+                                                        </select>
+                                                        <label class="input-error">Tahapan transaksi belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Sifat Pengajuan KPR *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="sifat" class="form-control input-sm" name="sifat">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="segera">Segera</option>
+                                                            <option value="pertimbangkan">Masih di pertimbangkan</option>
+                                                            <option value="cariinfo">Masih mencari informasi</option>
+                                                        </select>
+                                                        <label class="input-error">Sifat pengajuan belum Anda pilih.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Limit pinjaman *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="text" class="form-control input-sm" placeholder="Limit pinjaman" name="limit">
+                                                        <label class="input-error">Limit pinjaman belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Jangka Waktu Kredit *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <select name="jangkawaktu" class="form-control input-sm" name="jangkawaktu">
+                                                            <option value="" disabled selected>- Pilih -</option>
+                                                            <option value="3">3 Tahun</option>
+                                                            <option value="4">4 Tahun</option>
+                                                            <option value="5">5 Tahun</option>
+                                                            <option value="6">6 Tahun</option>
+                                                            <option value="7">7 Tahun</option>
+                                                            <option value="8">8 Tahun</option>
+                                                            <option value="9">9 Tahun</option>
+                                                            <option value="10">10 Tahun</option>
+                                                            <option value="11">11 Tahun</option>
+                                                            <option value="12">12 Tahun</option>
+                                                            <option value="13">13 Tahun</option>
+                                                            <option value="14">14 Tahun</option>
+                                                            <option value="15">15 Tahun</option>
+                                                        </select>
+                                                        <label class="input-error">Jangka waktu belum Anda isi.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group has-error required">
+                                                    <label class="col-sm-5 col-md-5 text-left">Attachment KTP *</label>
+                                                    <div class="col-sm-7 col-md-7">
+                                                        <input type="file" class="upload" name="attachktp">
+                                                        <label class="input-error">KTP belum terlampir.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <div class="checkbox">
+                                                            <label class="disclaimer" style="text-align:justify;margin-bottom: 25px;">
+                                                                <input type="checkbox" name="fsetuju" id="fsetuju" value="1" class="validate[required]"> Saya bersedia untuk dihubungi kembali oleh pihak HSBC melalui sarana komunikasi apapun seperti telepon, sms, email dan sarana komunikasi lainnya untuk mendapatkan penjelasan dan konfirmasi lebih lanjut mengenai produk HSBC Home Loan.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="col-sm-12 text-right">
+                                                        <button type="submit" class="btn btn-primary">Kirim Pengajuan Sekarang</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>    
+
+                                </form>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="infokprhsbc" class="tab-pane fade">
+            <section id="glance">
+                <div class="bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="section-heading">SEKILAS</h2>
+                                <hr>
+                                <h3 class="section-subheading text-muted">Miliki rumah idaman keluarga bersama <span style="color: red;">HSBC Home Loan</span></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Keunggulan dan solusi <span style="color: red;">HSBC Home Loan</span></h3>
+                                <p><strong>Suku bunga tetap yang kompetitif sesuai pilihan Anda :</strong></p>
+                                <ul class="two-cols">
+                                    <li>7.77 % P.A</li>
+                                    <li>8.88 % P.A</li>
+                                    <li>9.99 % P.A</li>
+                                </ul>
+                                <p>Berlaku untuk pembiayan pembelian properti, alih pinjaman dan tambahan pinjaman.</p>
+                                <p><strong>Suku bunga floating yang stabil.</strong></p>
+                                <ul>
+                                    <li>Jumlah pinjaman terhadap agunan maksimal 70%.</li>
+                                    <li>Tenor pinjaman yang fleksibel mulai dari 3 tahun hingga 15 tahun.</li>
+                                    <li>Kemudahan pembayaran cicilan secara otomatis melalui debit dari rekening HSBC Anda setiap bulannya.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Dokumen yang perlu di siapkan :</h3>
+                                <img src="http://images.id.ippstatic.com/kpr/hsbc/table-hsbc.jpg" alt="" class="img-center img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="advance">
+                <div class="bg-grey">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3 class="section-heading">NIKMATI JUGA BERAGAM KEUNTUNGAN<br>SEBAGAI NASABAH ADVANCE ATAU PREMIERE</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <img src="http://images.id.ippstatic.com/kpr/hsbc/support.png" alt="" />
+                                <h3><strong>Dukungan Tim Finansial</strong></h3>
+                                <p class="text-muted text-justify" style="margin-top:35px;">Bangun rencana keuangan yang komprehensif, didukung oleh pakar investasi dan mitra HSBC.</p>
+                                <p class="text-muted text-justify">Relationship Manager yang berdedikasi untuk mewujudkan beragam ambisi Anda, khusus nasabah Premier.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="http://images.id.ippstatic.com/kpr/hsbc/finansial.png" alt="" />
+                                <h3><strong>Solusi FInansial Kelas Dunia</strong></h3>
+                                <p class="text-muted text-justify" style="margin-top:35px;">Beragam solusi finansial untuk mengembangkan keuangan, mempersiapkan dana pendidikan anak, proteksi dan masa pensiun.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="http://images.id.ippstatic.com/kpr/hsbc/kapanpun.png" alt="" />
+                                <h3><strong>Dimanapun, Kapanpun</strong></h3>
+                                <p class="text-muted text-justify" style="margin-top:35px;">Fitur Digital Wealth Dashboard untuk memonitor perkembangan portofolio Anda dimanpun dan kapanpun.</p>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <a href="" class="btn btn-primary btn-half">Ajukan Sekarang</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="tips">
+                <div class="bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2 class="section-heading">TIPS</h2>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="text-center">Membeli Rumah Baru</h2>
+                                <p>Membeli rumah atau properti adalah salah satu keputusan finansial terbaik yang bisa Anda lakukan. Banyak faktor yang harus Anda pertimbangkan, mulai dari mencari pinjaman yang tepat sampai menemukan rumah idaman.</p>
+                                <p>Langkah-langkah membeli rumah :</p>
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading active">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: #000;">Survey rumah idaman</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse">
+                                            <div class="panel-body">Mulailah pencarian rumah idaman Anda dengan gambaran yang jelas tentang apa yang Anda inginkan, apartemen atau rumah, 2 kamar tidur atau 4 kamar tidur, lebih dekat kekantor atau sekolah anak atau di daerah perumahan, dan lain-lain. Jika perlu, gunakan jasa agen properti yang terpercaya untuk membantu Anda mencari properti idaman Anda.</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading active">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color: #000;">Hitung anggaran dana yang diperlukan</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse">
+                                            <div class="panel-body">HSBC biasanya memberikan pinjaman 70% dari nilai properti, jadi Anda perlu mempersiapkan dana minimum 30% dari nilai properti sebagai langkah awal.<br><br>
+                                            Dana lain yang perlu dipersiapkan dalam permohonan Home Loan Anda seperti Biaya Administrasi sebesar 0,1% dari nilai pinjaman, Biaya Provisi sebesar 1% dari nilai pinjaman, serta biaya - biaya lain seperti biaya appraisal, biaya Notaris, Asuransi Jiwa dan Kebakaran serta Biaya Pajak Pembeli (Biaya Perolehan Hak atas Tanah dan Bangunan) yang akan ditentukan kemudian.<br><br>
+                                            Hitung perkiraan dana Home Loan Anda dengan Kalkulator HSBC Home Loan.</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading active">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color: #000;">Manfaatkan fasilitas Home Loan yang tepat</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse">
+                                            <div class="panel-body">Memilih Home Loan yang tepat merupakan langkah penting berikutnya setelah mencari rumah idaman. Dalam memilih Home Loan, ada beberapa hal yang harus dipertimbangkan; tingkat suku bunga, proses yang cepat dan mudah, tenor pinjaman yang dapat disesuaikan dengan rencana jangka panjang Anda dan benefit-benefit lain yang ditawarkan.<br><br>
+                                            Cari tahu tentang benefit lengkap HSBC Home Loan di sini.</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading active">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="color: #000;">Valuasi dan legalitas properti</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse4" class="panel-collapse collapse">
+                                            <div class="panel-body">Setelah menemukan rumah idaman dan Home Loan yang tepat, lakukan valuasi terhadap rumah idaman Anda dengan menggunakan jasa perusahaan penilai yang telah menjadi rekanan HSBC.<br><br>
+                                            Langkah selanjutnya adalah menghubungi notaris untuk memeriksa dokumen properti dan mengurus sisi legalitas untuk membeli properti. HSBC akan memberikan rekomendasi notaris yang bisa Anda hubungi.<br><br>
+                                            Biaya jasa penilai tergantung dari luas properti dan biaya notaris dapat berbeda tergantung lokasi/daerah properti serta besarnya nilai properti yang diajukan. Kami sarankan Anda untuk menghubungi beberapa notaris rekanan HSBC untuk perbandingan harga.</div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading active">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="color: #000;">Finalisasi dan settlement</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse5" class="panel-collapse collapse">
+                                            <div class="panel-body">Setelah valuasi rumah idaman Anda telah selesai dan seluruh tahap telah selesai dilaksanakan, maka tahap berikutnya adalah finalisasi Home Loan Anda. Pada tahap akhir, HSBC akan memberikan persyaratan dokumen terakhir yang diperlukan, antara lain:<br><br>
+                                            <strong>Asuransi</strong><br><br>Home Loan Anda akan dijaminkan oleh perusahaan asuransi yang telah bekerja sama dengan HSBC untuk melindungi properti dan diri Anda dari hal-hal yang tidak diinginkan. HSBC akan membantu Anda dalam pengajuan asuransi jiwa dan kebakaran kepada perusahaan asuransi yang ditunjuk.<br><br><strong>Surat Persetujuan</strong><br><br>HSBC akan memberikan surat persetujuan kepada Anda sebagai bukti bahwa proses aplikasi Home Loan Anda telah disetujui dengan jumlah pinjaman yang sesuai dengan hasil analisa HSBC. Apabila Anda menyetujui surat tersebut, segera infokan kembali ke HSBC dengan surat persetujuan yang telah Anda tanda tangani.<br><br><strong>Akad Kredit</strong><br><br>Ini adalah tahap terakhir dari proses pengajuan aplikasi, dimana proses jual beli melalui HSBC Home Loan akan dilegalisasi di depan notaris yang telah menjadi rekanan HSBC. Semua biaya yang timbul atas proses pengajuan HSBC Home Loan ini harus diselesaikan sebelum akad kredit dilaksanakan.<br><br>Apa yang dilakukan saat Akad Kredit ?<br><br>
+                                                <ul>
+                                                    <li>Penandatanganan Akta Jual Beli (AJB) dengan Pihak Penjual dan penandatanganan Akta Pembebanan Hak Tanggungan (APHT) dengan HSBC dihadapan Notaris.</li>
+                                                    <li>HSBC akan membayar sejumlah uang kepada penjual sesuai dengan nilai transaksi yang tertulis di AJB melalui transfer antar bank.</li>
+                                                    <li>Setelah penjual menerima pembayaran tersebut maka penjual akan menyerahkan seluruh asli dokumen dan segala hal yang berkaitan dengan kepemilikan properti tersebut kepada notaris.</li>
+                                                    <li>Notaris akan menyerahkan seluruh dokumen properti (asli) yang diperjualbelikan untuk proses pendaftaran beserta permohonan perubahan nama dari penjual kepada pembeli kepada Badan Pertanahan Nasional setempat.</li>
+                                                    <li>Sertifikat yang sudah didaftarkan dan dibalik nama ke Badan Pertanahan Nasional akan dikirimkan kembali oleh notaris kepada HSBC.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="text-center">Pengalihan Home Loan</h2>
+                                <p>Bila Anda memiliki Home Loan yang telah berjalan, kami akan dengan senang hati membantu pengalihan Home Loan Anda menjadi HSBC Home Loan.</p>
+                                <p><strong>Keuntungan dari pengalihan Home Loan yang bisa Anda nikmati :</strong></p>
+                                <ul>
+                                    <li>Cicilan bulanan yang lebih rendah.</li>
+                                    <li>Jangka waktu pinjaman lebih panjang.</li>
+                                </ul>
+                                <p><strong>Yang perlu Anda lakukan :</strong></p>
+                                <ul>
+                                    <li>Isi aplikasi pengajuan HSBC Home Loan.</li>
+                                    <li>Melengkapi surat persetujuan kredit dan surat sisa hutang saat ini dari Bank sebelumnya.</li>
+                                    <li>HSBC akan mengevaluasi ulang harga rumah dan pendapatan Anda saat ini.</li>
+                                    <li>Untuk selanjutnya akan mengikuti proses pengajuan Home Loan yang berlaku di HSBC.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <a href="" class="btn btn-primary btn-half">Ajukan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+       
+    <footer class="hsbc-footer">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><a href="" target="_blank"><img src="http://images.id.ippstatic.com/kpr/hsbc/logo.png" alt="" /></a></h2>
+                    <p>&nbsp;</p>
+                    <p>Issued by The Hongkong and Shanghai Banking Corporation Limited Jakarta branch, which is registered and supervised by Financial Services Authority (OJK).</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <h2>Punya pertanyaan?</h2>
+                    <p>Hubungi Layanan Phone Banking HSBC 24-Jam:</p>
+                    <ul style="list-style-type: none;">
+                        <li>64722 (Mobile Phone)</li>
+                        <li>(021) 5291 4722 (JABODETABEK Area)</li>
+                        <li>0804 186 4722 (Other Cities)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/rumah123.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".calc-show").click(function () {
+            $(".hsbc-calc").slideToggle("slow");
+        });
+    });
+
+    $(document).ready(function() {
+        $('.accordion-toggle').click(function() {
+            $('.accordion-toggle').parent().css('background-color', '#f5f5f5');
+            $('.accordion-toggle').parent().parent().removeClass('panel-heading');
+            $('.accordion-toggle').parent().css('padding', '10px 15px');
+            if (!$($(this).attr('href')).is(':visible')) {
+                $(this).parent().css('background-color', 'red');
+            } else {
+                $(this).parent().css('background-color', '#f5f5f5');
+            }
+        });
+    });
+
+    function switchVisible() {
+        if (document.getElementById('count-form')) {
+            if (document.getElementById('count-form').style.display == 'none') {
+                document.getElementById('count-form').style.display = 'block';
+                document.getElementById('result-form').style.display = 'none';
+                }
+            else {
+                document.getElementById('count-form').style.display = 'none';
+                document.getElementById('result-form').style.display = 'block';
+                }
+            }
+    }
+
+    function switchbackVisible() {
+        if (document.getElementById('result-form')) {
+            if (document.getElementById('result-form').style.display == 'none') {
+                document.getElementById('result-form').style.display = 'block';
+                document.getElementById('count-form').style.display = 'none';
+                }
+            else {
+                document.getElementById('result-form').style.display = 'none';
+                document.getElementById('count-form').style.display = 'block';
+                }
+            }
+    }
+</script>
+<script type="text/javascript">WebFontConfig={google:{families:["Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800:latin"]}},function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();
+</script>
+
+</body>
+</html>

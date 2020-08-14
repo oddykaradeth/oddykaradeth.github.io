@@ -1,0 +1,269 @@
+.loadmore-photo #loadMore {
+  width: 50%;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.post-header .container .topleaderboard-banner {
+  width: auto;
+}
+.foto-lainnya .topleaderboard-banner {
+  width: auto;
+}
+.post-header .news-post-gallery {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.post-header .post-heading-gallery {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+#main-photo-gallery {
+  margin-bottom: -50px;
+}
+#main-photo-gallery .fa-angle-left {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  z-index: 1 ;
+}
+#main-photo-gallery .fa-angle-left:hover {
+  position: absolute;
+  color: #fff;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+#main-photo-gallery .fa-angle-right {
+  position: absolute;
+  right: 20%;
+  top: 40%;
+}
+#main-photo-gallery .fa-angle-right:hover {
+  position: absolute;
+  color: #fff;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+.post-heading-gallery-foto {
+  color: #0081c6;
+}
+@media only screen and (max-width: 480px) {
+  #main-photo-gallery .fa-angle-left {
+    visibility: hidden;
+  }
+  #main-photo-gallery .fa-angle-right {
+    visibility: hidden;
+  }
+}
+@media only screen and (width: 768px) {
+  #main-photo-gallery .fa-angle-left {
+    left: 20px;
+    top: 150px;
+    opacity: 1;
+  }
+  #main-photo-gallery .fa-angle-right {
+    right: 20px;
+    top: 150px;
+    opacity: 1;
+  }
+}
+.slick-slide {
+  opacity: 0.3;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.slick-slide .sosmed-foto {
+  opacity: 0;
+}
+.slick-active {
+  opacity: 1;
+  color: #838383;
+}
+.slick-active .sosmed-foto {
+  opacity: 1;
+}
+.slick-active p {
+  color: #fff;
+}
+.deskripsi .text-photo {
+  padding: 15px;
+}
+.deskripsi .text-photo span {
+  color: #0081c6;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: medium;
+}
+.iklan-photo {
+  text-align: center;
+}
+.photo-slider-gallery {
+  background-color: #000;
+  height: auto;
+}
+.photo-slider-gallery .center .item {
+  width: auto;
+  height: auto;
+}
+.photo-slider-gallery .center .item .img p {
+  text-align: center;
+  margin-top: 1%;
+  color: #fff;
+  opacity: 0.5;
+}
+.photo-slider-gallery .center .item .img img {
+  max-height: 700px;
+  padding: 0px;
+}
+.photo-slider-gallery .center .item .col-md-12 .photo-detail-eye {
+  float: right;
+}
+.photo-slider-gallery .center .item .col-md-12 {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.photo-slider-gallery .center .item .col-md-12 .col-md-2 .photo-detail-right {
+  text-align: right;
+}
+.photo-slider-gallery .center .item .col-md-12 .col-md-8 .photo-detail-center {
+  text-align: left;
+}
+.photo-slider-gallery .center .item .sosmed-foto {
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .photo-slider-gallery .center .item .img img {
+    max-height: 330px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 480px) {
+  .photo-slider-gallery .center .item .img img {
+    max-height: 318px;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 1080px) {
+  .photo-slider-gallery .center .item .img img {
+    max-height: 410px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1281px) {
+  .photo-slider-gallery .center .item .img img {
+    max-height: 530px;
+  }
+}
+@media all and (max-width: 768px) and (min-width: 320px) {
+  .photo-slider-gallery .center .item .col-md-12 .col-md-2 .photo-detail-right {
+    text-align: left;
+  }
+  .photo-slider-gallery .center .item .col-md-12 .col-md-8 .photo-detail-center {
+    text-align: left;
+  }
+  .photo-slider-gallery .center .item .sosmed-foto {
+    text-align: center;
+  }
+}
+.foto-lainnya {
+  margin-bottom: 100px;
+}
+.foto-lainnya .text-photo {
+  margin-top: 40px;
+  text-align: center;
+}
+.foto-lainnya .text-photo span {
+  color: #0081c6;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: large;
+}
+.masonry-container .detail-photo-lain {
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 2px solid #D8D8D8;
+}
+.masonry-container .detail-photo-lain:hover {
+  border-bottom: 2px solid #666;
+}
+.masonry-container .detail-photo-lain .hover-detail {
+  background-color: #000;
+  opacity: 1;
+}
+.masonry-container .detail-photo-lain .hover-detail i {
+  visibility: hidden;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-align: center;
+}
+.masonry-container .detail-photo-lain .hover-detail a img:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.5;
+}
+.masonry-container .detail-photo-lain .hover-detail:hover i {
+  visibility: visible;
+  color: #fff;
+}
+.masonry-container .detail-photo-lain .caption {
+  padding: 0px;
+  background-color: #fff;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+.masonry-container .detail-photo-lain .caption h3 {
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.masonry-container .detail-photo-lain .caption p {
+  color: #828282;
+}
+.masonry-container .detail-photo-lain .caption p span {
+  color: #828282;
+}
+.panel-body-photo {
+  height: auto;
+  text-align: justify;
+}
+.ingatkan-saya-content {
+background: url(https://d3p0bla3numw14.cloudfront.net/photo-gallery/photo-gallery.png) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+  }
+.ingatkan-saya-content .text-center {
+  padding-top: 30px;
+}
+.ingatkan-saya-content .text-center h2 {
+  text-decoration: none;
+  color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  .ingatkan-saya-content {
+    background-position-x: -443px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ingatkan-saya-content {
+    background-position-x: -22px;
+  }
+}
+.curtain {
+  background: #fff;
+}
+.ads-photo {
+  padding: 0px;
+  text-align: -webkit-center;
+}
+.post-headline-slide {
+  background-color: #000000 !important;
+}
+/* SAFARI MEDIA QUERY */

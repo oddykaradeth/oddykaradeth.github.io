@@ -1,0 +1,130 @@
+.col-center {
+  margin: 0 auto;
+  float: none;
+}
+.consumer-dashboard h1 {
+  margin: 20px;
+  font-size: 24px;
+}
+.form-box .control-label {
+  color: #999999;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+.form-box {
+  padding: 0 20px;
+}
+.form-box.password-fields {
+  border-top: 1px solid #ebebeb;
+  padding-top: 20px;
+}
+.form-box.password-fields .form-group:first-child {
+  margin-top: 20px;
+}
+.form-box.form-cta {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+.form-box.form-cta .form-group {
+  margin-bottom: 0;
+}
+.form-cta .btn-action {
+  text-transform: uppercase;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.datepicker .input-group-addon {
+  color: #2980b9;
+  font-size: 20px;
+  background-color: transparent;
+}
+.consumer-dashboard .filter-property-type h1 {
+  float: left;
+  margin-right: 20px;
+}
+.consumer-dashboard .filter-property-type:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.consumer-dashboard .filter-property-type .form-group {
+  margin-top: 20px;
+}
+.consumer-dashboard .listing {
+  margin: 0;
+  padding: 20px;
+}
+.consumer-dashboard .default-listing img {
+  height: 95px;
+  width: auto;
+}
+.consumer-dashboard .list-view .default-listing .info-listing {
+  height: auto;
+}
+.consumer-dashboard .list-view .info-listing .bottom-row {
+  position: relative;
+  width: auto;
+}
+.consumer-dashboard .right-info.btn-area {
+  margin-top: 20px;
+}
+.consumer-dashboard .right-info.btn-area .btn-action {
+  margin-left: 10px;
+}
+.consumer-dashboard .serp-pagination {
+  background-color: #f4f4f4;
+  margin: 0;
+}
+.consumer-dashboard .pagination > li > a {
+  background-color: #f4f4f4;
+}
+.consumer-dashboard .pagination > li > span {
+  background-color: #f4f4f4;
+}
+.consumer-dashboard .data-inner-row {
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px;
+}
+.consumer-dashboard .data-inner-row:hover {
+  background-color: #fcfcfc;
+}
+.consumer-dashboard .listing-location {
+  color: #999;
+}
+.consumer-dashboard .data-inner-row .btn-action {
+  margin-left: 10px;
+}
+.data-inner-row .dropdown {
+  display: inline-block;
+}
+.data-inner-row span.label-row {
+  display: block;
+  color: #999;
+}
+.form-box .price-range input.form-control {
+  display: inline-block;
+  width: auto;
+}
+/* col-xs (Extra Small) */
+@media only screen and (max-width: 767px) {
+  .consumer-dashboard .filter-property-type .form-group {
+    position: static;
+    margin: 0 20px;
+  }
+  .consumer-dashboard .filter-property-type h1 {
+    margin-bottom: 10px;
+  }
+  .consumer-dashboard .data-inner-row .btn-action {
+    margin-left: 0;
+  }
+  .consumer-dashboard .data-inner-row .btn {
+    margin-top: 10px;
+  }
+  .consumer-dashboard .listing-type.listing-sell {
+    margin-top: 10px;
+  }
+  .consumer-dashboard .filter-property-type h1 {
+    float: none;
+  }
+}

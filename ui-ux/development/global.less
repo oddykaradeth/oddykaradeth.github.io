@@ -1,0 +1,320 @@
+.hide-form {
+  display: none;
+}
+
+.content-wrapper {
+    margin-top: 20px;
+}
+
+.content-bordered-box {
+    border: 1px solid #ececec;    
+    border-radius: 5px;/* mjuliakbar 17022015 */
+}
+
+.photo-container {
+    position: relative;
+/*    border: 1px solid #ececec;
+    background: #f4f4f4;*/
+}
+
+.photo-paging {
+    text-align: center;
+}
+
+.photo-paging .trigger {
+    color: #000;
+    font-size: 24px;
+    margin: 0px 15px;
+    top: 3px;
+    position: relative;
+}
+
+.seo-text {
+    color: #999;
+    border-top: 1px solid #ececec;
+    margin-top: 40px;
+    padding: 10px;
+    line-height: 24px;
+}
+
+//.excerpt {}
+//.excerpt-small {}
+.excerpt-small .excerpt-content {
+    height: 80px;
+}
+//.excerpt-toggle {}
+.excerpt .excerpt-content {
+    overflow: hidden;
+}
+.excerpt-small .excerpt-content.show {
+    height: auto;
+}
+.excerpt > .btn {
+    padding: 0px 10px;
+}
+
+.carousel-container{
+    display: none;    
+}
+
+.fixed-banner {
+    position: absolute;
+    margin-left: 1022px;
+    z-index: 1;
+}
+
+.fixed-banner a {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+.ui-autocomplete { 
+    position: absolute; 
+    cursor: default;
+    z-index:10000 !important;
+    max-height: 300px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+.scrollToTop {
+      position: absolute;
+      /* bottom: 20px; */
+      /* left: 0; */
+      display: block;
+      text-align: center;
+      font-size: 13px;
+      width: 164px;
+      height: 60px;
+      color: #428abe;
+      background-color: #ebebeb;
+      border: 1px solid #dadada;
+      border-radius: 5px;
+      right: 0;
+      /* margin: 50px; */
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-right: 25px;
+      padding: 10px 30px;
+}
+
+.scrollToTop:hover, .scrollToTop:focus{
+    text-decoration:none;
+}
+.scrollToTop .fa {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color: #999;
+}
+/* cover */
+.cover-wrapper  {
+    background: url(https://d3p0bla3numw14.cloudfront.net/images/bina_karya/binakarya-bg-cover.jpg);
+    background-position: 0 50%;
+    background-size: cover;
+   /* background-repeat: no-repeat;*/
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: auto;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    vertical-align: middle;
+    z-index: 1;
+    display: block;
+    position: relative;
+}
+.cover-wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+.caption-info {
+  display: table-cell;
+  vertical-align: middle;
+  height: 440px;
+}
+.cover-wrapper .caption-info {
+    text-align: center;
+    color: #fff;
+}
+.cover-wrapper .caption-info h2 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+}
+.cover-wrapper p {
+    font-size: 14px;
+    line-height: 28px;
+}
+.button-cover .call-to-action {
+    padding: 5px 0px;
+}
+.button-cover .call-to-action .btn-transparent {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+.button-cover .call-to-action .btn-transparent:hover, .button-cover .call-to-action .btn-transparent:focus, .button-cover .call-to-action .btn-transparent:active {
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;    
+}
+.button-cover::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: auto;
+}
+.cover-wrapper .button-cover {
+    padding: 25px 0px;
+}
+.cover-wrapper p {
+    margin: 20px 0px;
+    font-size: 15px;
+}
+/* end cover */
+
+/* content */
+.button-content {
+    width: 100%;
+    text-align: center;
+    padding: 35px 0px;
+}
+/* end content*/
+
+/* Form */
+.checkbox-additional {
+    margin-top: 10px;
+}
+/* End Form */
+
+
+/* start photo-count class */
+/* using this for the number of photos */
+.photo-count {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 5px 10px;
+    bottom: 0px;
+    left: 0;
+    z-index: 5;
+}/* End photo-count class  */
+
+/* start form-inline class */
+  .form-inline::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: auto;
+  }/* end form-inline class */
+
+/* start class sub-title */
+  .sub-title {
+    margin: 0px;
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+/* end class sub-title */
+
+/* start select pretty has error */
+.select-pretty .has-error {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);  
+}
+/* start select pretty has error */
+
+/* Has error */
+.has-error .control-label {
+  margin-top: 5px;
+}
+.content-wrapper .col-md-8 .panel .panel-title {
+  font-size: 16px;
+  padding: 2px 0;
+}
+
+/* Tag(s) */
+.tag-wrapper {
+    margin-top: 5px;
+}
+.tag-wrapper .label.label-default {
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px;
+    margin: 2px;
+    margin-top: 7px;
+    background-color: #e4e4e4;
+    font-weight: normal;
+    border: 1px solid #cccccc;
+    color: #777;
+}
+/*.tag-wrapper .label.label-default:hover {
+    background-color:#dddddd;
+    color:#414141;
+}*/
+/* col-xs (Extra Small) */
+@media only screen and (max-width: 767px) {
+    /* 19082014 */
+    .hide-mobile{
+        display: none;
+    }
+    .fixed-banner{
+        display: none;
+    }
+    .scrollToTop {
+        left: 0;
+        margin: auto;
+    }
+
+    /* start class input-inline wrapper */ 
+    .input-inline-wrapper:last-child {
+        margin-top: 15px;    
+    }/* end class input-inline wrapper */
+
+    /* start class photo container */
+ /*   .list-view .photo-container img {
+        width: 100%;
+    }*/
+    /* end class photo container */
+}
+
+/* col-lg (LARGE), col-md (MEDIUM), col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) {
+    .contact-form button.btn.btn-action {
+        float: right;
+    }
+
+}
+
+
+/* col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) and (max-width: 991px) {
+    .fixed-banner{
+        display: none;
+    }
+}
+
+
+/* col-lg (LARGE), col-md (MEDIUM) */
+@media only screen and (min-width: @screen-desktop) {
+	#bottom-bar .dropdown:hover .dropdown-menu, #top-bar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .cover-wrapper {
+        height: 440px;
+    }
+    .caption-info {
+        width: 1200px;
+    }
+}

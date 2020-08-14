@@ -1,0 +1,133 @@
+// Color variables (appears count calculates by raw css)
+@color0: #2980b9; // Appears 7 times
+@color1: #999999; // Appears 3 times
+@color2: #414141; // Appears 2 times
+
+
+
+.post-header { 
+    .post-heading {
+        .search-keyword {
+            color:#d43134;
+        }
+    }
+}
+.search-keyword-container {
+    padding: 20px 0 !important;
+    .post-heading {
+        margin-bottom: 15px;
+    }
+}
+.post-wrapper {
+    .search-result {
+        color: #999999;
+        font-size: 13px;
+    }
+    .post-orderby {
+        li {
+            a {
+                color: #999999;
+                font-size: 13px;
+            }
+            &:hover {
+                a {
+                    color: #2980b9;
+                }
+            }
+            &:focus {
+                a {
+                    color: #2980b9;
+                }
+            }
+            &:active {
+                a {
+                    color: #2980b9;
+                }
+            }
+        }
+        li.active {
+            a {
+                color: #2980b9;
+            }
+        }
+    }
+    .list-group {
+        .list-post {
+            padding: 5px 0;
+            .post-title {
+                margin-top: 0;
+                a {
+                    color: #414141;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+            .post-text {
+                color: #999999;
+            }
+            .photo-count {
+                left: 15px;
+                bottom: 22px;
+            }
+            .thumbnail {
+                background: #414141;
+                overflow: hidden;
+                img {
+                    min-width: 100%;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+            h2 {
+                a {
+                    &:hover {
+                        color: #2980b9;
+                    }
+                    &:focus {
+                        color: #2980b9;
+                    }
+                    &:active {
+                        color: #2980b9;
+                    }
+                }
+            }
+        }
+    }
+}
+.list-post {
+    .post-title {
+        a {
+            .moretext {
+                display: none;
+            }
+        }
+    }
+}
+
+/* col-lg (LARGE), col-md (MEDIUM) */
+@media only screen and (min-width: @screen-desktop) {
+    .search-keyword-container {
+        .post-heading {
+            height: 100px;
+            line-height: 100px;
+            white-space: nowrap;
+        }
+    }
+    .post-wrapper {
+        .list-group {
+            .list-post {
+                .thumbnail {
+                    height: 134px;
+                    width: 200px;
+                    img {
+                        height: 100%;
+                    }
+                    img.img-responsive {
+                        max-width: none !important;
+                    }
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,946 @@
+/* SERP Top Bar */
+.serp-top-bar {
+    border-bottom: 1px solid #ececec;
+}
+
+.serp-top-bar li {
+    float: left;
+    list-style: none;
+}
+
+.serp-top-bar ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.serp-sorting li.selected {
+    font-weight: bold;
+}
+
+.serp-sorting li.selected a {
+    color: #000;
+}
+
+.serp-sorting li a {
+    color: #999;
+}
+
+.serp-sorting li {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 320px){
+ul#serp-pagination-link>li>span{
+    float:none;
+}
+}
+
+@media only screen and (max-width:600px) {
+ul#serp-pagination-link>li>span{
+    float:none;
+}
+}
+
+@media only screen and (max-width:768px) {
+ul#serp-pagination-link>li>span{
+    float:none;
+}
+}
+
+
+.serp-view-mode li {
+    border-right: 1px solid #ececec;
+    padding: 10px;
+    position: relative;
+}
+
+.serp-view-mode li:last-child {
+    border-right: 0;
+}
+
+.serp-view-mode li.selected {
+    margin-bottom: -1px;
+    border-bottom: 1px solid #fff;
+}
+
+.serp-view-mode li.selected a {
+     color: #000;
+}
+
+.serp-view-mode li:last-child.selected {
+	border-right: 1px solid #ececec;
+}
+
+.serp-view-mode li {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.serp-view-mode li a:hover{
+	text-decoration: none;
+}
+
+/* SERP Listing */
+.serp-listing h1 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 30px 0px 30px 10px;
+}
+
+.serp-listing h1 small {
+    color: #999;
+}
+
+.listing {
+    // mjuliakbar 20150805
+    // margin: 0px 10px;
+    padding: 20px;
+    border-bottom: 1px solid #ececec;	
+}
+
+.listing-premier {
+  background-color: #f4f4f4;
+}
+
+/*.gts-listing {
+    background-color: #fdfcf5; 
+}*/
+
+.info-listing .right-info {
+    text-align: right;
+}
+
+.info-listing .bottom-row {
+    margin-top: 5px;
+}
+
+.gts-listing .info-listing .bottom-row{
+	margin-top: 30px;
+}
+
+.listing-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 0px 5px;
+    max-height: 50px;
+	overflow: hidden;
+}
+
+.listing-type{
+	vertical-align: top;
+    margin-bottom: 5px;
+}
+
+.listing-type:before{
+	width: 8px;
+    height: 8px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+.listing-sell:before {
+    background-color: #d43134;
+}
+
+.listing-rent:before {
+    background-color: #1c80bb;
+}
+
+.listing-newlaunch:before {
+    background-color: #25af61;
+}
+
+.listing-badges {
+    margin-bottom: 10px;
+}
+
+.listing-badges span{
+	padding: 3px 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.listing-badges .exclusive {
+    background-color: #feefb6;
+    color: #8b731b;
+}
+
+.listing-badges .new {
+    background-color: #d19233;
+    color: #fff;
+}
+
+.listing-badges .featured {
+    background-color: #e4e4e4;
+    color: #999;    
+}
+
+.listing .listing-location{
+	color: #999;
+}
+
+.listing .price-info {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.listing .agency-info {
+    font-weight: bold;
+}
+
+.listing .posted-date {
+    color: #999;
+}
+
+.listing .rent-info {
+    color: #999;
+}
+
+.listing .simulation-link {
+    margin-top: 5px;
+}
+
+.listing .simulation-link a{
+    color: #043164;
+}
+
+.listing .simulation-link a span{
+    color: #cd3729;
+}
+
+.listing .sold-label {
+    background-color: rgba(212, 49, 52, 0.9);
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0px;
+}
+
+.listing:hover{
+	background-color: #fcfcfc;
+}
+
+.tag {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    display: inline-block;
+    padding: 3px 8px;
+}
+.tag.price {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: #2980b9;
+    color: #ffffff;
+    font-size: 12px;
+}
+.tag.price > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.row-button {
+    margin-top: 10px;
+}
+
+/*.listing:hover .row-button{
+    visibility: visible;    
+}
+*/
+/*.listing .row-button > .row-button{
+    visibility: visible; 
+}updated - mjuliakbar 13feb2015 -->
+ */
+
+.row-button .contact-agent-btn {
+    margin: 0px;
+}
+
+.serp-pagination {
+    margin: 40px 0px;
+}
+
+.serp-paging {
+    text-align: center;
+}
+
+.serp-listing > .listing:last-child {
+    border-bottom: 0;
+}
+
+.posted-date {
+    margin-top: 5px;
+}
+
+.rent-info {
+    margin-top: 5px;
+}
+
+.listing-room-info {
+    margin-top: 5px;
+}
+
+.listing-room-info > div {
+    font-size: 10px;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 5px;	
+	padding-right: 10px;
+}
+
+.listing-room-info > div:last-child {
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.listing-room-info > div > b {
+    font-size: 13px;
+    color: #000;
+    
+}
+.listing-room-info:after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+.listing-size-info > div {
+    font-size: 10px;
+text-transform: uppercase;
+}
+.listing-size-info > div > b {
+    font-size: 13px;
+    color: #000;
+    text-transform: lowercase;
+    
+}
+.listing-size-info:after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+.default-listing img {
+	height: 185px;
+}
+
+.gts-listing img {
+    height: 210px;
+    width: 100%;
+}
+
+.newlaunch-listing img {
+    height: 185px;
+    width: 100%;
+}
+
+.mini-property-alerts-banner {
+    color: #999;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+.mini-property-alerts-banner > a {    
+    margin-top: 5px;
+}
+.mini-property-alerts-banner > a > img {
+    margin: 0 auto;
+}
+
+.listing-mini-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    z-index: 100;
+    border-top: 10px solid rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */     
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */;
+}
+
+.listing-mini-bar .wrapper {
+    background-color: #f4f4f4;
+    padding: 10px;    
+}
+
+.listing-mini-bar .col-wrapper {
+    background-color: #fcfcfc;
+    position: relative;
+    padding: 10px;
+}
+.listing-mini-bar .col-wrapper .listing-remove-button {
+    position: absolute;
+    right: 0px;
+    color: #000;
+	font-size: 20px;
+	padding-top: 0px;
+}
+
+.listing-mini-bar .head {
+    padding: 10px;
+}
+.listing-mini-bar .head .title {
+    font-size: 18px;
+    margin: 8px 0px 0px;
+}
+
+.listing-mini-bar .col-wrapper .location {
+margin-bottom: 10px;
+}
+
+.listing-mini-bar .col-wrapper .listing-info h3 {
+margin: 0px;
+font-weight: normal;
+height: 18px;
+overflow: hidden;
+font-size: 15px;
+}
+
+.listing-mini-bar .col-wrapper .listing-info .price {
+font-weight: bold;
+}
+
+.listing-mini-bar .col-wrapper .listing-info .building-size {
+margin-top: 10px;
+}
+
+.listing-mini-bar .head .button > button {
+    margin-left: 10px;
+}
+.listing-mini-bar .head .button > button:last-child {    
+}
+
+.listing-mini-bar .wrapper .col-sm-4 {
+    margin-bottom: 10px;
+}
+
+.listing-mini-bar .wrapper .container > .row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: auto;
+}
+.listing-mini-bar .wrapper .container > .row > .col-sm-4 {
+    display: inline-block;
+    float: none;
+}
+
+.listing-mini-bar .wrapper > .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.listing-mini-bar .wrapper .container>.row>.col-sm-4 {
+    width: 350px;
+}
+
+.listing-mini-bar .container {
+    width: 100% !important;
+}
+
+.listing .info-listing div > .col-sm-6:first-child {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.serp-result-info {
+    padding: 6px 12px;
+    text-align: center;
+    color: #999;
+}
+
+.content-loading {
+    text-align: center;
+    padding: 30px 0px;
+    display: none;
+}
+
+.loading {
+    font-size: 16px;
+}
+
+.listing-badges .featured .fa-star {
+    color: #d19233;
+}
+
+.row.agent-profile .agency-info img {
+    height: 36px;
+}
+
+.row.agent-profile .btn {
+    width: 90%;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+/* Grid View */
+.grid-view .gts-listing img, .grid-view .default-listing img, .grid-view .newlaunch-listing img {
+    height: 137px;
+    width: 193px;
+}
+
+.grid-view .row-button button > span {
+    display: none;
+}
+
+.grid-view .left-button .checkbox span {
+    display: none;
+}
+
+.grid-view > .row > .col-sm-4 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.grid-view > .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.grid-view .listing{
+    height: 422px;
+}
+.grid-view .listing .photo-listing {
+    position: relative;
+}
+.grid-view .listing .photo-listing .photo-paging {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5); color: #fff;
+}
+.grid-view .listing .photo-listing .photo-paging .trigger {
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 5px;
+}
+.grid-view .info-listing {
+    margin-top: 5px;
+}
+.grid-view .info-listing .posted-date {
+    margin-top: 15px;
+}
+.grid-view .info-listing .rent-info {
+    margin-top: 15px;
+}
+.grid-view .info-listing .price-info {
+    margin-top: 15px;
+}
+.grid-view .listing {
+    padding: 10px;
+}
+
+.grid-view .row-button button {
+    padding: 7px;
+}
+
+.grid-view .listing .listing-location {
+    height: 36px;    
+    overflow: hidden;
+}
+
+.grid-view .listing-badges {
+    height: 20px;
+    overflow: hidden;
+}
+
+/* Added by mjuliakbar 11Des2014 */
+
+.more-listing {
+    padding: 20px 0;
+}
+
+.more-listing .link-listing {
+    text-align: right;
+    font-weight: bold;
+}
+
+.listing-title .featured {
+    background-color: #e4e4e4;
+    color: #999;
+}
+.listing-title span {
+    padding: 3px 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+}
+.listing-title .featured .fa-star {
+    color: #d19233;
+}
+.agent-contact-detail ul li .fa-phone {
+    font-size: 15px;
+}
+
+/* Added by mjuliakbar 19Jan2015 */
+.dropdown.share-container .btn {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.default-listing .agency-info {
+    height: 18px; overflow: hidden;
+}
+/* Filter area and sub-area */
+
+/* Start sub area lists */
+.serp-breakdown .sub-area .sub-area-lists ul li {
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}    
+.serp-breakdown .border-right {
+    border-left: 1px solid #f4f4f4;
+}
+
+.serp-breakdown .area,
+.serp-breakdown .sub-area {
+    padding: 0 8px;
+}
+/*.serp-breakdown .area {
+    margin-left: 5px;
+}*/
+
+/* Fixed by Oddy - 04022016 */
+.serp-breakdown .area .breadcrumb li {
+    display: table-row;
+    padding: 5px 0;
+}
+.serp-breakdown .area .breadcrumb li a {
+    color: #2980b9;
+}
+.serp-breakdown .area .breadcrumb li.active {
+    font-size: 14px;
+    color: #414141;
+    white-space: inherit;
+}
+.serp-breakdown .sub-area h3 {
+    text-align: center;
+    font-weight: bold;
+}
+.serp-breakdown .sub-area {
+    margin-bottom: 15px;
+}
+
+/*.serp-breakdown .sub-area .sub-area-lists {
+    margin-bottom: 15px;
+}*/
+.serp-breakdown .sub-area::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: auto;
+}
+.serp-breakdown .sub-area .sub-area-lists ul  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*.serp-breakdown .sub-area .sub-area-lists ul li {
+    padding-bottom: 5px;
+}*/
+.serp-breakdown .sub-area .sub-area-lists ul li a {
+    color: #414141; 
+    line-height: 21pt;
+}
+.serp-breakdown  .sub-area .see-all {
+    clear: both;
+    padding: 5px 0 0 15px;
+}
+.serp-breakdown  .sub-area .list-hidden {
+    display: none;
+}
+/* End sub area lists */
+
+/* 02042015 */
+.serp-property-alert {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background: url(https://d3p0bla3numw14.cloudfront.net/assets/image/image-serp.png) no-repeat;
+  background-position: 50% 0%;
+}
+.serp-property-alert .property-alert-btn {
+  margin: auto;
+  padding: 30px 0px;
+}
+.serp-property-alert .property-alert-icon {
+    text-align: center;
+}
+/* 02042015 */
+
+/*.serp-breakdown .sub-area .more-area {
+    text-align: center;
+}*/
+/* col-xs (Extra Small) */
+
+/* Start price info 20150417 */
+.serp-content .info-listing .price-info p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.serp-content .info-listing .price-info p span {
+    margin-left: 5px;
+}
+// .optional-filter .select2-container--default .select2-selection--multiple .select2-selection__choice {
+//     float: none !important; 
+//     padding-top: 5px;
+//     padding-bottom: 5px;
+// }
+
+/* end price info */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .serp-breakdown .area .breadcrumb li {
+        display: inherit;
+    }
+    .serp-breakdown .area .breadcrumb li.active {
+        min-height: 0px;
+    }
+    .serp-breakdown .sub-area .see-all {
+        clear: both;
+        padding: 10px 0 0 0px;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+@media only screen and (max-width: 767px) {    
+
+.grid-view .listing{
+    height: auto;
+}
+
+.serp-top-bar ul.serp-sorting.pull-right {
+    float: left !important;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+}
+.listing .info-listing div > .col-sm-6:first-child {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.info-listing .right-info {
+    text-align: left;
+}
+.default-listing img {
+    height: auto;    
+}
+.row-button .btn > span {
+    display: none;
+}
+.left-button {
+    float: left;
+}
+.left-button .checkbox {
+    display: inline-block;
+    min-height: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.left-button .checkbox span {
+    display: none;
+}
+.row-button:after {
+    display: block;
+    content: "";
+    clear: left;
+}
+.newlaunch-listing img, .gts-listing img {
+    height: auto;
+    width: 100%;
+}
+.grid-view .gts-listing img, .grid-view .default-listing img, .grid-view .newlaunch-listing img{
+    height: auto;
+}
+.row-button{
+    visibility: visible;
+}
+.listing-mini-bar .head .button.text-right {
+    text-align: left;
+    margin-top: 15px;
+}
+.listing-mini-bar .wrapper .listing-info {
+    width: 200px;
+    overflow: hidden;
+}
+.listing .info-listing .bottom-row {
+    margin-top: 20px !important;
+}
+.listing .agency-info {
+    margin-top: 20px;
+}
+.listing .row-button {
+    margin-top: 20px;
+}
+.listing .price-info {
+    margin-top: 20px;
+}
+.listing .listing-title {
+    margin-top: 20px;
+}
+/*.gts-listing img, .newlaunch-listing img, .default-listing img, .grid-view .gts-listing img, .grid-view .default-listing img, .grid-view .newlaunch-listing img{
+    width: 767px;
+}*/
+/* Updated 11032015 */
+.pagination li:first-child,
+.pagination li:last-child
+ {
+    display: block;
+    padding: 10px 0px;
+    margin: 5px 0px;
+}
+.pagination li a {
+    float: none;
+}
+/* Start sub area list */
+.serp-breakdown .sub-area .sub-area-lists ul {
+    text-align: center;
+}
+.serp-breakdown .area {
+    border-bottom: 1px solid #ececec;
+}
+/* End sub area list */
+}
+
+.serp-listing .row-banner-ads {
+    margin: 15px;
+}
+.serp-listing .row-banner-ads p {
+    color: #ddd;
+}
+
+/* Suggestion Search */
+.suggested-result {
+    overflow: hidden;
+    h1 {
+        padding: 15px 0px;
+        margin-left: 15px;
+        margin-right:15px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    h3 {
+        padding: 15px 0px;
+        margin-left:15px;
+        margin-right: 15px;
+        color: #414141;
+        line-height: 25px;
+    }
+    .property-suggestion {
+        margin: 15px 15px;
+        background-color: #f5f5f5;
+        .suggested-detail {
+            padding-left: 0px;
+            @media only screen and (max-width: 425px) {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            h3 {
+                padding: 0px;
+                margin-left: 0px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/* col-lg (LARGE), col-md (MEDIUM), col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) {
+    /*.listing.default-listing .sold-label {
+        width: 189px;
+    }*/
+    .list-view .info-listing .bottom-row {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .list-view .gts-listing .info-listing {
+        height: 210px;
+    }
+
+    .list-view .default-listing .info-listing, .newlaunch-listing .info-listing {
+        height: 185px;
+    }
+    .grid-view .row-button {
+        position: absolute; bottom: 10px; width: 100%;
+    }
+
+    .grid-view .row-button .see-more-btn {
+        margin-right: 15px;
+    }
+
+    .grid-view .listing {
+        position: relative;
+        height: 445px;
+    }
+    .default-listing img{
+        width: 199px;
+    }
+
+    .gts-listing img, .newlaunch-listing img{
+        width: 257px;
+    }
+    .serp-breakdown .sub-area ul {
+        list-style: none;
+        text-align: left;    
+        padding: 0px;
+        border: 0;
+    }
+    .serp-breakdown .sub-area h3 {
+        text-align: left;
+        padding-left: 15px;
+    }  
+   
+}
+
+/* col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) and (max-width: 991px) {
+    .row-button{
+        visibility: visible;
+/*        padding-left: 15px;
+*/    }
+    .serp-breakdown .sub-area .sub-area-lists ul li {
+        width: 25%;
+        padding: 0 5px;
+    }
+    .serp-breakdown .sub-area .sub-area-lists {
+        padding-left: 15px;
+    }    
+    .serp-breakdown .area {
+        border-bottom: 1px solid #ececec;
+    }    
+    .serp-breakdown .border-right {
+      border-left: none;
+    } 
+}
+/* col-lg (LARGE), col-md (MEDIUM) */
+@media only screen and (min-width: @screen-desktop) {
+    .serp-breakdown .custom-width {
+        width: 15.666667% !important;
+    }  
+    .serp-breakdown .sub-area .sub-area-lists ul li {
+        width: 20%;
+        padding: 0 5px;
+    }    
+    .serp-breakdown .sub-area .sub-area-lists {
+        padding-left: 15px;
+    }
+}

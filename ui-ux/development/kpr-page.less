@@ -1,0 +1,290 @@
+
+html,
+body {
+    height: 100%;
+}
+body {
+  font-family: 'MuseoSans' !important;
+}
+@font-face {
+    font-family: 'MuseoSans';
+    src: url(/hp/static/MuseoSans_700-webfont-a5f6fb79b782b75c958f1c392600f476.eot);
+    src: url(/hp/static/MuseoSans_700-webfont-a5f6fb79b782b75c958f1c392600f476.eot?#iefix) format("embedded-opentype"), url(/hp/static/MuseoSans_700-webfont-599fd0cd77bcfdf74c9021f6f3527546.woff) format("woff"), url(/hp/static/MuseoSans_700-webfont-bb34dad4f7f0f4ff84d55660f12ca5ea.ttf) format("truetype"), url(/hp/static/MuseoSans_700-webfont-d7b2e98d1c4d132e165219db257091e1.svg#museo_sans700) format("svg")
+}
+
+#kpr-r123 {
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0;
+  }
+  .kpr-header {
+  	width: 100%;
+  	height: 70vh;
+  	background: url('https://d3p0bla3numw14.cloudfront.net/kpr-page/assets/banner-kpr.jpg') center center no-repeat scroll;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+  	position: relative;
+  	.layer-bg {
+  		background-color: rgba(0, 0, 0, 0.5);
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		width: 100%;
+  		height: 100%;
+  	}
+  	.tagline {
+  		position: absolute;
+  		float: left;
+  		width: 100%;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, 0%);
+  		padding: 0 !important;
+  		h1 {
+  			font-size: 60px;
+  			text-shadow: 5px 4px rgba(0, 0, 0, 0.2);
+  			color: #ffffff;
+  			text-align: center;
+  			margin-bottom: 16px;
+  		}
+  		p {
+  			text-align: center;
+  			color: #ffffff;
+  			font-size: 24px;
+  			line-height: 25px;
+  			text-shadow: 0;
+  		}
+  	}
+  }
+  .kpr-content {
+    background-color: #f4f4f4;
+    .kpr-col {
+      float: none;
+      margin: auto;
+      padding: 0;
+      display: inline-block;
+      @media (max-width: 768px) {
+        display: inherit;
+      }
+    }
+    .kpr-form {
+    	text-align: center;
+      margin: 64px 0;
+      @media (max-width: 640px) {
+    	  margin: 32px 0;
+      }
+    	h2 {
+    		text-align: center;
+    		border-bottom: none !important;
+    		margin: 0;
+    	}
+    	p {
+    		font-size: 16px;
+    		width: 100%;
+    		margin: 16px 0;
+    		line-height: normal;
+    		text-align: center;
+    		display: inline-block;
+    	}
+    	form {
+    		margin: 16px 0 0 !important;
+    		display: inline-block;
+    		.form-group {
+    			margin-bottom: 10px;
+          .form-control {
+      			font-size: 14px;
+      			padding: 0 0 0 8px;
+      			width: 100%;
+      			height: 34px;
+      			border-radius: 2px;
+      			background-color: #fbfbfb;
+      			position: relative;
+      			display: inline-block;
+      			line-height: 1.5;
+      			color: #414141;
+      			border: 1px solid #d9d9d9;
+      			-webkit-transition: all .3s;
+      			transition: all .3s;
+          }
+          select {
+            padding: 5px !important;
+            color: #414141;
+          }
+          .input-group-btn {
+            .btn-date {
+              padding: 6px 10px;
+              background-color: #fbfbfb;
+              .fa {
+        				font-size: 13px;
+                position: inherit;
+                margin: 0;
+                top: 0
+        			}
+            }
+      		}
+    		}
+    	}
+      .kpr-sdk {
+        .kpr-btn {
+          width: 100%;
+        }
+        .checkbox {
+          text-align: justify;
+          margin-top: 0;
+          font-size: 12px;
+          input[type=checkbox] {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+      .form-simulator {
+        .control-group {
+          margin: 16px 0 0;
+          label {
+            margin: 0 0 8px;
+            color: #95a5a6;
+            font-size: 16px;
+            font-weight: 500;
+          }
+          h4 {
+            margin: 0 0 4px;
+            font-weight: 500;
+          }
+          .calc-result {
+            margin: 0;
+            h3 {
+              margin: 0 16px 25px;
+              color: #2980b9;
+            }
+          }
+        }
+      }
+    }
+    .kpr-bank {
+    	background-color: #fbfbfb;
+      .bank-title {
+        margin: 32px 0;
+        @media (max-width: 768px) {
+          margin: 0 15px;
+        }
+        h2 {
+          margin: 0 0 16px;
+          @media (min-width: 320px) and (max-width: 640px) {
+            margin-top: 16px;
+          }
+        }
+      }
+    	.list-bank {
+        margin: 0 0 32px;
+        padding: 0;
+        display: inline-block;
+        @media (min-width: 320px) and (max-width: 768px) {
+          margin-top: 16px;
+          padding: 0 15px;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          padding: 0 15px;
+        }
+        .logo-bank {
+    			margin: 0px;
+    			border-radius: 0;
+    			border: 1px solid #dedede;
+    			background-color: #ffffff;
+    			text-align: center;
+          @media (max-width: 640px) {
+            margin: 0 !important;
+          }
+    			.bank-img {
+            padding: 0;
+            margin: auto;
+    			}
+    		}
+    	}
+    }
+    .kpr-tool {
+      margin: 64px 0;
+      @media (max-width: 680px) {
+        margin: 32px 0;
+      }
+      .thumbnail {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+      }
+    }
+    .kpr-artikel {
+    	margin: 0 0 32px;
+      @media (max-width: 640px) {
+        margin-bottom: 0;
+      }
+      .news-wrapp {
+        .thumbnails {
+          width: 100%;
+          display: inline-block;
+          background-color: #ffffff;
+          margin: 0;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          @media (max-width: 640px) {
+            margin-bottom: 30px
+          }
+      		.images-article {
+      			display: block;
+      			width: 100%;
+      			position: relative;
+      			height: 0;
+      			padding: 69.25% 0 0 0;
+      			overflow: hidden;
+      			background-color: #cccccc;
+      			img {
+      				position: absolute;
+      				display: block;
+      				object-fit: cover;
+      				width: 100%;
+      				height: 100%;
+      				left: 0;
+      				right: 0;
+      				top: 0;
+      				bottom: 0;
+      			}
+      		}
+      		.caption {
+      			padding: 8px 16px 32px;
+      			h3 {
+              font-size: 18px;
+              line-height: 22px;
+              font-weight: 700;
+              color: #333f48;
+              text-align: center;
+              width: 100%;
+              margin-bottom: 8px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              max-height: 45px;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+      			}
+            p {
+              font-size: 14px;
+              line-height: 18px;
+              font-weight: 500;
+              color: #566271;
+              text-align: center;
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              max-height: 55px;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+            }
+      		}
+      	}
+      }
+    }
+  }
+}

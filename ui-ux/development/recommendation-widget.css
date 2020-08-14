@@ -1,0 +1,83 @@
+ul.recommendation-widget {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+}
+.recommendation-widget li a h3 {
+  font-size: 13px;
+  margin: 0px 0px 10px;
+  line-height: 18px;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.recommendation-widget li:hover .rw-hide {
+  display: block;
+}
+.recommendation-widget li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 25px;
+  position: relative;
+}
+.rw-city {
+  color: #000;
+}
+#pm-recommendations h5 {
+  font-size: 18px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.recommendation-widget li a {
+  display: block;
+}
+.recommendation-widget .rw-img {
+  float: left;
+  max-width: 115px;
+  max-height: 85px;
+  margin-right: 10px;
+}
+.recommendation-widget .rw-img img {
+  height: 85px;
+  width: 115px;
+}
+.recommendation-widget .rw-desc {
+  color: #000;
+}
+.r-circle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.r-circle-red {
+  background-color: #d43134;
+}
+.rw-hide {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 16px !important;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  display: none;
+}
+.recommendation-widget li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.recommendation-widget li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.recommendation-widget li a:hover {
+  text-decoration: none;
+}
+.recommendation-widget .rw-desc b {
+  margin-bottom: 10px;
+  display: inline-block;
+}

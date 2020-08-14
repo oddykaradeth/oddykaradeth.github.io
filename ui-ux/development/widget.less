@@ -1,0 +1,174 @@
+.widget {
+    border: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+.area-specialist-widget .photo-paging {
+    background-color: #f4f4f4;
+    padding-bottom: 5px;
+}
+.area-specialist-widget .agent-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+    height: 25px;
+    overflow: hidden;
+}
+.area-specialist-widget .agent-photo img {
+    margin: 0 auto 10px;
+}
+.area-specialist-widget .agent-listing {
+    margin-top: 5px;
+}
+.area-specialist-widget .agent-photo {
+    margin-left: 20px;
+}
+.area-specialist-widget .agent-info {
+    margin-right: 10px;
+}
+
+.row.agent-profile > .col-xs-6 {
+    padding-left: 0px;
+}
+
+.row.agent-profile > .col-xs-6:first-child {
+    padding-left: 15px;
+}
+
+// 29082014
+.area-specialist-widget .agent-photo img{
+    height: 95px;
+}
+
+.widget h3 {
+    font-size: 14px;
+    margin: 10px 10px 20px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+}
+
+.local-info-widget p {
+    margin: 0px 10px 10px;
+}
+
+ul.property-list {
+    list-style: none;
+    margin: 0px 10px;
+    padding: 0px;
+}
+.property-news-widget .link-to-all {
+    padding: 10px 10px;
+    text-align: right;
+    background-color: #ececec;
+}
+ul.property-list li {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 5px;
+}
+ul.property-list li:last-child{
+    border-bottom: 0;
+}
+ul.property-list li:first-child {
+    padding-top: 0px;
+}
+ul.property-list li a {
+    display: block;
+}
+ul.property-list li a span.title {
+    color: #000;
+    display: block;
+}
+ul.property-list li a span.date {
+    color: #999;
+    font-size: 11px;
+}
+ul.property-list li a span.cta {
+    margin-top: 5px;
+    display: block;
+}
+ul.property-list li a img {
+    width: 100%;
+    height: 75px;
+}
+
+.sidebar .agent-info-widget {
+    padding: 10px;
+}
+
+/* tambahan aldi */
+.local-info-widget .morecontent span {
+display: none;
+}
+
+.local-info-widget .excerpt-content {
+padding: 10px;
+margin-top: -20px;
+min-height: 120px;
+}
+
+.local-info-widget .btn-link {
+/* disabled by mjuliakbar 23Des2014*/
+/* margin-left: -15px; */
+}
+
+.local-info-widget .btn-link.less {
+margin-left: -23px;
+}
+
+.local-info-widget .excerpt-small .excerpt-content {
+height: auto;
+}
+
+/* tamabahan request agen narsis */
+.area-specialist-widget .row.agent-profile .col-xs-6:last-child {
+    padding-left: 0;
+}
+
+
+.widget .profile-picture {
+    width: 100px;
+    height: 70px;
+    display: table;
+    background: #fff;
+    margin: 20px auto;
+}
+.widget .profile-picture a {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.widget .profile-picture a img {
+    max-width: 150px;
+    max-height: 70px;
+    margin: auto;
+}
+
+/* col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) and (max-width: 991px) {
+    .sidebar {
+        margin-top: 40px;
+    }
+    .seo-text {
+        border-bottom: 1px solid #ececec;
+    }
+}
+
+/* col-lg (LARGE), col-md (MEDIUM) */
+@media only screen and (min-width: @screen-desktop) {
+    // set with 300px for sidebar widget globally
+    .content-wrapper .sidebar {
+      width: 300px;
+      float: right;
+    }
+    // set with 700px for content container globally
+    .content-wrapper .content {
+      width: 700px;
+    }    
+/*  .content-wrapper > .container > .row > .col-md-4 {
+        width: 300px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }*/
+    
+/*    .content-wrapper > .container > .row > .col-md-8 {
+        width: 730px;
+    }*/
+}

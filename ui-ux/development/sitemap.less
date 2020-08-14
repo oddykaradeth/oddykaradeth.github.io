@@ -1,0 +1,65 @@
+.sitemap-wrapper ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sitemap-wrapper h2 {
+	font-size: 24px;
+}
+.sitemap-wrapper h3 {
+	font-weight: bold;
+	font-size: 13px;
+}
+.sitemap-wrapper ul li {
+	padding: 3px 0;
+}
+
+.sitemap-wrapper ul li a {
+	color: #414141;
+}
+
+.sitemap-wrapper .showMore {
+	padding: 5px 0;
+}
+
+.sitemap-wrapper .sitemap-content{
+	background-color: #f4f4f4;
+}
+.sitemap-wrapper .area-list li {
+	display: none;
+}
+
+/* col-xs (Extra Small) */
+@media only screen and (max-width: 767px) {
+	.sitemap-wrapper .area-content,
+	.sitemap-wrapper .sitemap-content,
+	.sitemap-wrapper .sitemap-menu {
+		padding-top: 10px;
+		padding-bottom: 25px; 
+	}	
+	.sitemap-wrapper .for-mobile::after {
+	  clear: both;
+	  display: block;
+	  content: "";
+	  height: auto;
+	}
+}
+
+/* col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) and (max-width: 991px) {
+	.sitemap-wrapper .area-content,
+	.sitemap-wrapper .sitemap-content,
+	.sitemap-wrapper .sitemap-menu {
+		padding-top: 15px;
+		padding-bottom: 25px;
+	}
+}
+/* col-lg (LARGE), col-md (MEDIUM) */
+@media only screen and (min-width: @screen-desktop) {
+	.sitemap-wrapper .area-content,
+	.sitemap-wrapper .sitemap-content,
+	.sitemap-wrapper .sitemap-menu {
+		padding-top: 20px;
+		padding-bottom: 40px; 
+	}
+}

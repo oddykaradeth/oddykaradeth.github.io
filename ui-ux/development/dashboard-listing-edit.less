@@ -1,0 +1,201 @@
+.edit-listing-dashboard .photo-upload .panel-body,
+.edit-listing-dashboard .video-youtube .panel-body {
+  background-color: #f4f4f4;
+}
+
+.edit-listing-dashboard .video-youtube h3 {
+	font-size: 14px;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+.edit-listing-dashboard .well {
+	border-radius: 0;
+	border: 0;
+	margin: 0;
+}
+.edit-listing-dashboard .facilities-opt {
+	margin-bottom: 10px;
+}
+
+/* Upload Photo */
+.photo-upload-wrapper .panel-body,
+.video-youtube-wrapper .panel-body {
+	background-color: #f4f4f4;
+}
+.photo-upload-wrapper .photo-upload-item,
+.video-youtube-wrapper .video-youtube-item {
+	position: relative;
+}
+.photo-upload-wrapper .photo-upload-item img,
+.video-youtube .video-youtube-item img {
+	height: 100%;
+	margin: auto;
+}
+.photo-upload-wrapper .photo-upload-item .btn-opt,
+.video-youtube-wrapper .video-youtube-item .btn-opt {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.photo-upload-wrapper .photo-upload > ul,
+.video-youtube-wrapper .video-youtube > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.photo-upload .photo-upload-item .btn-opt .fa,
+.video-youtube .video-youtube-item .btn-opt .fa {
+	margin: 0;
+}
+.video-youtube-wrapper .panel-heading h3 {
+	margin: 0;
+	padding: 0 5px;
+}
+.photo-upload-wrapper .photo-featured {
+  position: absolute;
+  bottom: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  color: #FF7302;
+  font-size: 21px;
+  bottom: 0;
+}
+.photo-upload-item .btn,
+.video-youtube-item .btn {
+	border-radius: 0;
+}
+.photo-upload ul .photo-upload-item,
+.video-youtube-wrapper .video-youtube .video-youtube-item {
+	height: 100px;
+	background-color: #414141;
+}
+.edit-listing-dashboard .btn .fa {
+	margin: 0px;
+}
+.panel-instruksi{
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+
+
+/* Editor Styles */
+
+.Editor-container{
+   margin-top:10px; 
+}
+#menuBarDiv{
+  border-radius:3px 3px 0 0;
+  border-bottom:none;
+  min-height:25px;
+  padding:5px 0;
+}
+#menuBarDiv .dropdown{float:left;}
+#menuBarDiv .dropdown-toggle{font-size:14px; }
+#menuBarDiv .dropdown-toggle .caret{margin-left:5px; border-top-color:#999;}
+#menuBarDiv a.btn{/* position:relative; */ /* margin-bottom:3px; */}
+#paletteCntr{}
+/*select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{height:auto; margin-bottom:10px;}*/
+  
+#statusbar{
+  min-height:30px;
+  border-radius:0 0 3px  3px;
+  border-top:none;
+  line-height:30px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  }
+#statusbar .label{
+  float:right; 
+  margin:6px 10px 0 0; 
+  background:#BBB; 
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); 
+  padding: 2px 4px;
+  font-size: 11.844px;
+  line-height:14px;
+} 
+.Editor-editor{ 
+    height:300px;
+    padding:1%;  
+  border:1px solid #EEE;
+  border-radius:0;
+    word-wrap: break-word;
+    background-color: #FFF;
+  }
+  .upgrade{
+	border-color: #194f72!important;
+	background-color: #2980b9!important;
+	color:#FFF!important;
+}
+	.upgrade:hover{
+		background-color: #20638f!important;
+	}
+	#upgrade-iklan > .well{
+		background-color: transparent;
+	}
+	#upgrade-iklan > .well > .order{
+		padding-left: 0;
+	}
+/* col-xs (Extra Small) */
+@media only screen and (max-width: 767px) {
+/*	.photo-upload-wrapper .photo-upload .photo-upload-item,
+	.video-youtube-wrapper .video-youtube .video-youtube-item {
+		width: 150px;
+		height: 150px;
+		margin: 8px;
+	}*/
+.photo-upload ul .photo-upload-item, .video-youtube-wrapper .video-youtube .video-youtube-item {
+    height: 100px;
+    background-color: #414141;
+    margin: 4px;
+    width: 30%;
+}	
+/*	.photo-upload-wrapper .photo-upload,
+	.video-youtube-wrapper .video-youtube {
+		width: 260px;
+		height: 200px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding: 0 5px;
+		margin: 10px auto;
+	}*/
+	.photo-upload-wrapper .photo-upload > ul,
+	.video-youtube-wrapper .video-youtube > ul {
+		white-space: nowrap;
+		margin: 0;
+		padding: 0;
+	}
+/*	.photo-upload-wrapper .photo-upload > ul,
+	.video-youtube-wrapper .video-youtube > ul {
+		height: 200px;
+	}*/
+	
+	/* bg-2853 */
+	.btn-preview div:first-child > a{
+		margin-bottom: 15px;
+	}
+	.btn-preview div:last-child > a{
+		margin-top: 15px;
+	}
+}
+
+/* col-sm (SMALL) */
+@media only screen and (min-width: @screen-tablet) and (max-width: 991px) {
+	.photo-upload ul .photo-upload-item,
+	.video-youtube ul .video-youtube-item {
+		width: 22%;
+		margin: 8px;
+	}
+}
+/* col-lg (LARGE), col-md (MEDIUM) */
+@media only screen and (min-width: @screen-desktop) {
+	.photo-upload ul .photo-upload-item,
+	.video-youtube-wrapper .video-youtube .video-youtube-item {
+		width: 17%;
+		margin: 8px;
+		height: 100px;
+		background-color: #414141;
+	}
+}

@@ -1,0 +1,111 @@
+/* TYPOGRAPHY */
+.agent-registration-page h1,
+.agent-registration-page h2 {
+  font-size: 36px;
+  padding: 15px 0px;
+  text-align: center;
+}
+.agent-registration-page .cover-wrapper h2 {
+  font-weight: 300;
+}
+.agent-registration-page p {
+  font-size: 14px;
+  line-height: 28px;
+}
+.agent-registration-page h3 {
+  font-size: 24px;
+}
+/* GLOBAL */
+.agent-registration-page .content-img,
+.agent-registration-page .content-text {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.agent-registration-page .content-img img {
+  width: 100%;
+}
+.agent-registration-page .why-use-r123 h3,
+.agent-registration-page .why-use-r123 p {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.agent-registration-page .why-use-r123,
+.agent-registration-page .price-list {
+  margin-bottom: 35px;
+}
+.agent-registration-page .cover-wrapper,
+.agent-registration-page .why-use-r123 .content-bg,
+.agent-registration-page .story-agent,
+.agent-registration-page .registration-agent {
+  background-color: #f4f4f4;
+}
+.agent-registration-page #agentCarousel {
+  position: relative;
+}
+.agent-registration-page .owl-carousel .item {
+  margin: 0px 20px;
+  text-align: center;
+}
+.agent-registration-page .owl-carousel .item .photo-container {
+  width: 120px;
+  height: 100px;
+  margin: 0 auto;
+}
+.agent-registration-page .owl-carousel .item p {
+  margin-top: 15px;
+}
+.agent-registration-page .owl-carousel .item img {
+  height: 100%;
+  margin: 0 auto;
+}
+.agent-registration-page .price-list {
+  text-align: center;
+}
+.agent-registration-page .price {
+  background: #414141;
+  padding: 15px 0px;
+  margin: 0px -20px;
+  color: #fff;
+  font-size: 26px;
+}
+.agent-registration-page .price-list a {
+  display: block;
+  margin: 25px 0px;
+}
+.agent-registration-page .pricing-item {
+  border: 1px solid #f4f4f4;
+  padding: 15px 20px;
+}
+.agent-registration-page .pricing-item h3 {
+  padding: 15px 0px;
+}
+.agent-registration-page .pricing-item.highlighted {
+  border: 1px solid #414141;
+  background: #f4f4f4;
+}
+.agent-registration-page .pricing-item.highlighted li {
+  border-bottom: 1px solid #414141;
+}
+.agent-registration-page .pricing-item ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.agent-registration-page .pricing-item ul li {
+  font-size: 14px;
+  padding: 25px 0px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.agent-registration-page .select-pretty .btn {
+  background: #fff;
+  color: #6b6b6b;
+  text-align: left;
+}
+.agent-registration-page .select-trigger {
+  float: right;
+  margin-left: 0px;
+}
+.agent-registration-page .registration-agent .form-group:last-child,
+.agent-registration-page .registration-agent .form-group:last-child p {
+  margin-top: 25px;
+}

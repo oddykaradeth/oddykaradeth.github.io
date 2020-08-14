@@ -1,0 +1,21 @@
+# Ingnoring Directories #
+###################
+
+#      Others      #
+####################
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Project files
+[Bb]uild/
+
+#Subversion files
+.svn
+
+# Office Temp Files
+~$*
+
+# AksiIDE Project File
+*.aprj
+

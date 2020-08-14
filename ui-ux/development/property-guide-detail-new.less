@@ -1,0 +1,107 @@
+    #panduan-guide-detail-new {
+        #panduan-tab {
+            margin-top: 10px;
+        }
+        #panduan-tab-mobile {
+            margin-top: 10px;
+        }
+        .nav-tabs {
+            &.nav-justified {
+                @media all and (min-width: 320px) and (max-width: 480px) {
+                    width: 15% !important;
+                    border-bottom: 0;
+                    font-size: 10px !important;
+                    align: center;
+                    display: inline-box !important;
+                    display: -webkit-inline-box !important;
+                    >li>a {
+                        padding: 6px;
+                    }
+                }
+            }
+        }
+        #panduan-guide-detail-new {
+            .main-content {
+                @media all and (min-width: 320px) and (max-width: 480px) {
+                    padding: 0 !important;
+                }
+            }
+        }
+        #panduan-subheader-1,
+        #panduan-subheader-2,
+        #panduan-subheader-3,
+        #panduan-subheader-4,
+        #panduan-subheader-5,
+        {
+            height: 150px;
+            background-color: #0081c6;
+            @media all and (min-width: 320px) and (max-width: 480px) {
+                height: 3px;
+                background-color: #0081c6;
+                >h1 {
+                    font-size: 20%;
+                }
+            }
+        }
+        .panduan-subheader-text {
+            padding: 50px 0 50px 0;
+            color: #fff !important;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        #right-sign-container,
+        #right-sign-container-2,
+        #right-sign-container-3,
+        #right-sign-container-4,
+        #right-sign-container-5 {
+            border: none !important;
+            >h3 {
+                font-weight: 900;
+            }
+        }
+        #right-sign,
+        #right-sign-2,
+        #right-sign-3,
+        #right-sign-4,
+        #right-sign-5 {
+            font-size: 12px;
+        }
+        a.right-sign-class {
+            &:hover {
+                background-color: none !important;
+                &:before {
+                    content: "";
+                    width: 2px;
+                    height: 20px;
+                    background-color: #0081c6;
+                    display: block;
+                    float: right;
+                    vertical-align: center;
+                    margin: 0 0 0 -5px;
+                }
+            }
+            &:focus {
+                text-decoration: none !important;
+                color: #555 !important;
+                &:before {
+                    content: "";
+                    width: 2px;
+                    height: 20px;
+                    background-color: #0081c6;
+                    display: block;
+                    float: right;
+                    vertical-align: center;
+                    margin: 0 0 0 -5px;
+                }
+            }
+        }
+        .main-content {
+            padding: 10px 0 0 0;
+        }
+        .ads-banner-wrapper {
+            margin-top: 20px;
+        }
+        .panel-footer {
+            background-color: #fff !important;
+        }
+    }
