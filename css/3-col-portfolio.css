@@ -7,7 +7,7 @@
 body {
   padding-top: 0;
   background-color: #f5f4f4;
-  font-family: 'Roboto', serif;
+  font-family: 'Epilogue', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -67,6 +67,12 @@ header.masthead span {
 	font-size: 18px;
 }
 
+.
+element.style {
+}
+.material-icons-two-tone {
+	font-size: 48px !important;
+}
 .bg-container {
 	background-color: #ffffff;
 
@@ -190,10 +196,10 @@ header.masthead span {
 	padding-right: 0;
 }
 .tool-set .info {
-	background-color: white;
+	/*background-color: white;*/
     border-radius: 3px;
     padding: 16px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+    /*box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;*/
     min-height: 200px;
 }
 .head-section p{
