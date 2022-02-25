@@ -6,7 +6,7 @@
 
 body {
   padding-top: 0;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -202,30 +202,28 @@ element.style {
 }
 
 .head-section {
-	margin-top: 32px;
-	margin-bottom: 16px;
+	margin-top: 0;
+	margin-bottom: 24px;
 }
 
 .head-section h2 {
 	margin-bottom: 0 !important;
 	font-weight: 200;
 	position: relative;
+	font-size: 1.6rem;
+	padding-bottom: 16px;
 }
 
 .head-section h2:after {
 	content: "";
 	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 6%;
+	height: 1px;
+	background: #00529b;
+	border-radius: 6px;
 }
-
-/*.head-section:before {
-    content: '';
-    height: 10px;
-    width: 50px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    display: block;
-    background: #ffa804;
-  }*/
 
 .head-section p {
 	padding-top: 0;
@@ -275,6 +273,7 @@ element.style {
 }
 .row-tool {
 	padding-right: 16px;
+	margin-bottom: 64px;
 }
 .tool-set {
 	margin : 8px 0;
@@ -282,11 +281,9 @@ element.style {
 	padding-right: 0;
 }
 .tool-set .info {
-	/*background-color: white;
-    border-radius: 3px;
-    padding: 16px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;*/
-    min-height: 200px;
+    min-height: 100px;
+    background: #ffffff;
+    padding: 24px;
 }
 .head-section p{
 	font-weight: 200;
@@ -296,12 +293,17 @@ element.style {
 h4.info-title {
 	font-weight: 500;
 	font-size: 16px;
+	margin-bottom: 24px;
 }
 .info p {
 	font-weight: 300;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: left;
 	margin-bottom: 0;
+}
+.info p span {
+	font-weight: normal;
+	color: #4976BA
 }
 a.btn-down {
     color: white;
