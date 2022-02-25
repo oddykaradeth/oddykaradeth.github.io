@@ -6,8 +6,8 @@
 
 body {
   padding-top: 0;
-  background-color: #f5f4f4;
-  font-family: 'Epilogue', sans-serif;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -33,24 +33,88 @@ body {
 	a.btn-up {
 		margin-bottom: 24px;
 	}
+	.center-middle h2 {
+		font-size: 2rem;
+		font-weight: 200;
+		text-align: center;
+	}
+	.center-middle p {
+		text-align: center;
+		font-size: 20px;
+		font-weight: 200;
+		color: #999;
+	}
+}
+
+.modal {
+	padding: 0 !important;
+}
+
+.modal .modal-dialog {
+	width: 100% !important;
+  	height: 100% !important;
+  	margin: 0 !important;
+  	padding: 0 !important;
+  	max-width: 100% !important;
 }
 
 .bg-opacity {
-	background-color: #2980b9;
+	background-color: transparent;
 	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
 }
 
-header.masthead {
+.navbar-dark .navbar-brand {
+    color: #333 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #333 !important;
+    
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.img-banner {
+	width: inherit;
+}
+
+.center-middle {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.center-middle h2 {
+	color: #333333;
+	font-weight: 200;
+	font-size: 2rem;
+}
+.center-middle p {
+	font-weight: 200;
+	font-size: 20px;
+}
+.small-text {
+	font-size: 16px !important;
+    color: #707070;
+    font-weight: 500 !important;
+    letter-spacing: 0.1rem;
+}
+
+/*header.masthead {
 	position: relative;
 	background-color: #343a40;
-	background: url(../img/close_up_code.jpg) no-repeat center center;
-	background-size: cover;
+	background: url(../img/img-new.png) no-repeat left;
+	background-size: 515px 355px;
 	padding-top: 5rem;
 	padding-bottom: 7rem;
-}
+}*/
 
 header.masthead .img-profile {
 	border: .3rem solid #d7d7d7;
@@ -78,20 +142,20 @@ element.style {
 
 }
 .portfolio-item {
-  margin-bottom: 30px;
+  	margin-bottom: 30px;
 }
 
 .pagination {
-  margin-bottom: 30px;
+  	margin-bottom: 30px;
 }
 
 .card {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 .card .card-placeholder {
-  position: relative;
-  height: 175px;
-  overflow: hidden;
+	position: relative;
+	height: 175px;
+	overflow: hidden;
 }
 
 .card .card-placeholder > a {
@@ -130,6 +194,7 @@ element.style {
 
 .head-section h2 {
 	margin-bottom: 0 !important;
+	font-weight: 200;
 }
 
 /*.head-section:before {
@@ -196,15 +261,15 @@ element.style {
 	padding-right: 0;
 }
 .tool-set .info {
-	/*background-color: white;*/
+	/*background-color: white;
     border-radius: 3px;
     padding: 16px;
-    /*box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;*/
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;*/
     min-height: 200px;
 }
 .head-section p{
-	font-weight: 300;
-	font-size: 16px;
+	font-weight: 200;
+	font-size: 20px;
 	margin-bottom: 24px;
 }
 h4.info-title {
