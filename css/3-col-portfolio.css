@@ -103,11 +103,8 @@ body {
 .small-text {
 	font-size: 16px !important;
     color: #707070;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     letter-spacing: 0.1rem;
-}
-.small-text span {
-	font-weight: 400;
 }
 
 /*header.masthead {
