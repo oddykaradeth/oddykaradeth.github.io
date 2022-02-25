@@ -6,7 +6,7 @@
 
 body {
   padding-top: 0;
-  background-color: #ffffff;
+  background-color: #fafafa;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -58,6 +58,20 @@ body {
   	max-width: 100% !important;
 }
 
+.modal .modal-content {
+	position: relative;
+}
+
+.modal .modal-content button.close {
+	position: absolute;
+    right: 0;
+    color: #fafafa;
+    font-size: 2rem;
+    background: #ff1721;
+    opacity: 1;
+    padding: 2px 8px;
+}
+
 .bg-opacity {
 	background-color: transparent;
 	position: absolute;
@@ -67,11 +81,11 @@ body {
 }
 
 .navbar-dark .navbar-brand {
-    color: #333 !important;
+    color: #333333 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #333 !important;
+    color: #333333 !important;
     
 }
 
@@ -285,31 +299,9 @@ h4.info-title {
 }
 .info p {
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: left;
 	margin-bottom: 0;
-}
-.icon.icon-sketch {
-	color: #ffae05;
-}
-.icon.icon-invision {
-	color: #ff3266;
-}
-.icon.icon-zeplin img {
-	width: 42px;
-	height: 48px;
-}
-.icon.icon-adobe {
-	color: #ec0a11;
-}
-.icon.icon-bootstrap {
-	color: #563d7c;
-}
-.icon.icon-html5 {
-	color: #ef5f25;
-}
-.icon.icon-css3{
-	color: #2880b8;
 }
 a.btn-down {
     color: white;
