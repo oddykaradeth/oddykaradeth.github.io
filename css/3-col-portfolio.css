@@ -262,12 +262,14 @@ element.style {
 	margin-left: 3px;
 	width: 32px;
 	height: 32px;
-	border: 1px solid #cccccc;
-	border-radius: 50%;
-	display: inline-block;
 }
 .footer-icon span a {
-	color: #ffffff;
+	color: none !important;
+	text-decoration: none !important;
+}
+.footer-icon span a ion-icon {
+	color: #5f5f5f !important;
+	font-size: 24px;
 }
 .close {
 	color: #ffffff;
