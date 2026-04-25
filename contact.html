@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodewyck Anthonius — UX Designer</title>
+    <meta name="description" content="Portfolio of Oddy Karadeth — UI/UX Designer specializing in digital product and website design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <section class="contact-header">
+          <a href="index.html" class="back-link">← Back</a>
+          <h1>Contact</h1>
+        </section>
+
+        <section class="contact-intro">
+          <div class="contact-intro-text">
+            <h2>Get in touch!</h2>
+            <p>
+              Do you have a product idea, want to discuss a project, or need a designer? Drop me an email!
+            </p>
+          </div>
+        </section>
+
+        <!-- CONTACT CONTENT -->
+        <section class="contact-section">
+
+          <div class="contact-image reveal">
+            <div class="image-wrapper">
+              <img src="images/Bdg.jpg" alt="Profile">
+            </div>
+          </div>
+
+          <div class="contact-form reveal">
+
+            <form id="contactForm" action="https://formspree.io/f/xojyrevg" method="POST">
+              <input type="email" name="email" placeholder="Your email" required>
+              <input type="text" name="name" placeholder="Your name" required>
+              <textarea name="message" placeholder="Write your message here..." required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+
+            <p id="formStatus" style="margin-top:12px; display:none;"></p>
+
+          </div>
+
+        </section>
+         <!-- FOOTER -->
+        <footer class="footer">
+          <div class="footer-item">
+              <div class="footer-icon">
+                  <img src="images/email.png" alt="Email">
+              </div>
+              <div class="footer-text">
+                  <span>Email</span>
+                  <p>oddie.karadeth@gmail.com</p>
+              </div>
+          </div>
+          <div class="footer-item">
+              <div class="footer-icon">
+                  <img src="images/linkedin.png" alt="LinkedIn">
+              </div>
+              <div class="footer-text">
+                  <span>LinkedIn</span>
+                  <p>linkedin.com/in/oddy-k</p>
+              </div>
+          </div>
+          <div class="footer-item">
+              <div class="footer-icon">
+                  <img src="images/dribbble.png" alt="Dribbble">
+              </div>
+              <div class="footer-text">
+                  <span>Dribbble</span>
+                  <p>dribbble.com/oddie</p>
+              </div>
+          </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
